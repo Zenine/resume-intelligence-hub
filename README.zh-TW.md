@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : README.md
-  Source commit: HEAD_PLACEHOLDER
+  Source commit: 476e325
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
