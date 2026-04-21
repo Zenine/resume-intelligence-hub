@@ -63,7 +63,7 @@ features:
 <!--
   Translation status:
   Source file : docs/index.md
-  Source commit: d6d6b92
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -79,11 +79,11 @@ npx skills add Zenine/resume-intelligence-hub -g -y
 然後在你常用的 AI IDE 裡說任意一句：
 
 ```
-> 帮我搭个简历库                           # 從零開一個 hub
-> 帮我针对这个 JD 生成简历                 # 客製履歷
-> 看看有什么合适的机会                     # 讓 AI 主動搜職缺
-> 针对这个职位帮我准备面试                 # 模擬面試 + 準備故事
-> 投递前帮我核查一下公开资料               # 公開資料交叉驗證
+> 幫我搭個履歷庫                           # 從零開一個 hub
+> 幫我針對這個 JD 生成履歷                 # 客製履歷
+> 看看有什麼合適的機會                     # 讓 AI 主動搜職缺
+> 針對這個職位幫我準備面試                 # 模擬面試 + 準備故事
+> 投遞前幫我核查一下公開資料               # 公開資料交叉驗證
 ```
 
 ## 它和其他履歷 skill 不一樣在哪

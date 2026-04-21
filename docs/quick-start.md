@@ -18,7 +18,7 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 
 Open your AI IDE (Claude Code, Cursor, Codex, Cline, Windsurf, or anything that reads `AGENTS.md`). Navigate to where you want the hub to live (a private location — never a public repo). Then say:
 
-> **帮我搭个简历库** (or **build my career repo**)
+> **build my career repo**
 
 The agent will walk you through a 7-question interview:
 
@@ -38,11 +38,11 @@ Once bootstrapped, the agent handles six workflows. Invoke with natural language
 
 | Say this | Workflow |
 |----------|----------|
-| 盘一下我跟目标座位的差距 / Diff my gap against the target seat | [Career planning & gap analysis](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — run this first, then re-run each quarter |
-| 帮我针对这个 JD 生成简历 / Tailor my resume to this JD | [JD-tailored resume](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
-| 看看有什么合适的机会 / What's out there for me | [Active JD sourcing](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
-| 针对这个职位帮我准备面试 / Prep me for this interview | [Interview prep](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
-| 投递前帮我核查公开资料 / Run pre-submission verification | [Verification](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
+| Diff my gap against the target seat | [Career planning & gap analysis](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — run this first, then re-run each quarter |
+| Tailor my resume to this JD | [JD-tailored resume](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
+| What's out there for me | [Active JD sourcing](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
+| Prep me for this interview | [Interview prep](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
+| Run pre-submission verification | [Verification](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
 | 帮我生成 XX 基金申报简历 / Generate XX grant application profile | [Grant application](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/grant-application.md) (research track) |
 
 ## Troubleshooting

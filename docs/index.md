@@ -71,11 +71,11 @@ npx skills add Zenine/resume-intelligence-hub -g -y
 Then, in your AI IDE, say any of:
 
 ```
-> 帮我搭个简历库 / build my career repo       # bootstrap a new hub
-> 帮我针对这个 JD 生成简历                     # tailor a resume to a JD
-> 看看有什么合适的机会                         # active JD sourcing
-> 针对这个职位帮我准备面试                     # interview coaching
-> 投递前帮我核查一下公开资料                   # pre-submission verification
+> build my career repo                              # bootstrap a new hub
+> tailor my resume to this JD                        # JD-tailored resume
+> what's out there for me                            # active JD sourcing
+> prep me for this interview                         # interview coaching
+> run a pre-submission verification                  # pre-submission fact-check
 ```
 
 ## How it differs from other resume skills

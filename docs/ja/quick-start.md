@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : docs/quick-start.md
-  Source commit: 47251d8
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -26,7 +26,7 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 
 お使いの AI IDE（Claude Code、Cursor、Codex、Cline、Windsurf、または `AGENTS.md` を読める任意の IDE）を開く。ハブを置きたい場所に `cd`——**必ずプライベートな場所**、公開される予定のリポジトリは避ける。そして次のように言う：
 
-> **帮我搭个简历库** （または **build my career repo**）
+> **build my career repo**
 
 エージェントが 7 問インタビューで進める：
 
@@ -46,11 +46,11 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 
 | 言い方 | ワークフロー |
 |--------|-------------|
-| 盘一下我跟目标座位的差距 / Diff my gap against the target seat | [キャリアプランニング & ギャップ分析](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — 初期化直後に最初に実行し、その後は四半期ごとに再実行 |
-| 帮我针对这个 JD 生成简历 / Tailor my resume to this JD | [JD カスタム履歴書](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
-| 看看有什么合适的机会 / What's out there for me | [アクティブ JD ソーシング](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
-| 针对这个职位帮我准备面试 / Prep me for this interview | [面接準備](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
-| 投递前帮我核查公开资料 / Run pre-submission verification | [検証](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
+| Diff my gap against the target seat | [キャリアプランニング & ギャップ分析](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — 初期化直後に最初に実行し、その後は四半期ごとに再実行 |
+| Tailor my resume to this JD | [JD カスタム履歴書](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
+| What's out there for me | [アクティブ JD ソーシング](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
+| Prep me for this interview | [面接準備](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
+| Run pre-submission verification | [検証](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
 | 帮我生成 XX 基金申报简历 / Generate XX grant application profile | [研究課題申請](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/grant-application.md)（リサーチトラック） |
 
 ## トラブルシューティング

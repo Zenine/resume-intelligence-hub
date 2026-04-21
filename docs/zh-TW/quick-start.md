@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : docs/quick-start.md
-  Source commit: 47251d8
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -26,7 +26,7 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 
 打開你用的 AI IDE（Claude Code、Cursor、Codex、Cline、Windsurf，只要能讀 `AGENTS.md` 都行），`cd` 到你打算放 hub 的資料夾——**一定選私人位置**，別放在將來會公開的 repo 裡。然後說：
 
-> **帮我搭个简历库**
+> **幫我搭個履歷庫**
 
 AI 會問你 7 個問題：
 
@@ -47,11 +47,11 @@ Hub 搭好之後，直接用中文和 AI 說想做什麼就行：
 | 你說 | 觸發的工作流程 |
 |------|--------------|
 | 盤一下我跟目標位子的落差 | [職涯規劃 & 差距盤點](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — 初始化後第一個跑，之後每季再跑一次 |
-| 帮我针对这个 JD 生成简历 | [JD 客製履歷](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
-| 看看有什么合适的机会 | [主動搜職缺](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
-| 针对这个职位帮我准备面试 | [面試準備](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
-| 投递前帮我核查公开资料 | [投遞前自查](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
-| 帮我生成国自然的申报简历 | [研究計畫申報](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/grant-application.md)（只在研究線開啟時） |
+| 幫我針對這個 JD 生成履歷 | [JD 客製履歷](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
+| 看看有什麼合適的機會 | [主動搜職缺](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
+| 針對這個職位幫我準備面試 | [面試準備](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
+| 投遞前幫我核查公開資料 | [投遞前自查](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
+| 幫我生成國科會（NSTC）研究計畫的申報履歷 | [研究計畫申報](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/grant-application.md)（只在研究線開啟時） |
 
 ## 常見問題
 

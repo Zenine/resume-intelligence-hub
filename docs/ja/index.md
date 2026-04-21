@@ -63,7 +63,7 @@ features:
 <!--
   Translation status:
   Source file : docs/index.md
-  Source commit: d6d6b92
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -79,11 +79,11 @@ npx skills add Zenine/resume-intelligence-hub -g -y
 その後、お使いの AI IDE で次のいずれかを言えばよい：
 
 ```
-> 帮我搭个简历库 / build my career repo       # 新規ハブの初期化
-> 帮我针对这个 JD 生成简历                     # JD にカスタム履歴書
-> 看看有什么合适的机会                         # アクティブ JD ソーシング
-> 针对这个职位帮我准备面试                     # 面接コーチング
-> 投递前帮我核查一下公开资料                   # 応募前検証
+> build my career repo                               # 新規ハブの初期化
+> tailor my resume to this JD                         # JD にカスタム履歴書
+> what's out there for me                             # アクティブ JD ソーシング
+> prep me for this interview                          # 面接コーチング
+> run a pre-submission verification                   # 応募前検証
 ```
 
 ## 他の履歴書 skill との違い
