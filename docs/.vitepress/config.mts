@@ -18,6 +18,47 @@ export default defineConfig({
     ['meta', { property: 'og:image', content: 'https://zenine.github.io/resume-intelligence-hub/hero.svg' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://zenine.github.io/resume-intelligence-hub/hero.svg' }],
+    // JSON-LD structured data (GEO) — helps AI search engines (Perplexity,
+    // SearchGPT, Google AI Overview) identify this as a software / skill.
+    [
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Resume Intelligence Hub',
+        description:
+          'An AI-agent skill that bootstraps a personal career intelligence hub — a private Git repo that is both a single source of truth (resumes, interview prep, grant applications, pre-submission verification) and a career compass (stretch target, capability gap, quarterly plan).',
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Cross-platform',
+        url: 'https://zenine.github.io/resume-intelligence-hub/',
+        image: 'https://zenine.github.io/resume-intelligence-hub/hero.svg',
+        author: {
+          '@type': 'Person',
+          name: 'Zenine Xu',
+        },
+        license: 'https://github.com/Zenine/resume-intelligence-hub/blob/main/LICENSE',
+        codeRepository: 'https://github.com/Zenine/resume-intelligence-hub',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
+        keywords: [
+          'resume',
+          'career intelligence',
+          'career compass',
+          'gap analysis',
+          'interview prep',
+          'JD-tailored resume',
+          'grant application',
+          'AI agent skill',
+          'Claude Code',
+          'Cursor',
+        ],
+        inLanguage: ['en', 'zh-CN', 'ja', 'zh-TW'],
+      }),
+    ],
   ],
 
   transformHead({ pageData, siteData }) {
