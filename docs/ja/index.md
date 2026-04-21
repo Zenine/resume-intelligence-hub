@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Resume Intelligence Hub"
   text: "あなた専用のキャリア OS"
-  tagline: "単一の信頼できる情報源となる Git リポジトリ、意見を持った方法論、そして重い作業をこなす AI エージェント——JD ソーシングから研究課題申請まで。"
+  tagline: "履歴書・面接準備・研究課題申請の単一の信頼できる情報源。次のストレッチ目標を名付け、ギャップを可視化し、今四半期のプランを回すキャリアの羅針盤。"
   image:
     src: /hero.svg
     alt: Resume Intelligence Hub
@@ -28,8 +28,8 @@ features:
       src: /icons/target.svg
       width: 48
       height: 48
-    title: ポジショニングロック
-    details: AGENTS.md の先頭でターゲットロール層と業界を一度だけ設定。以降のすべての生成物がそれに偏る——再プロンプト不要。
+    title: キャリアの羅針盤
+    details: 1–2 段上のストレッチ目標を明文化し、AGENTS.md の先頭にロック——以降のすべての履歴書がそれに偏る。四半期ごとに四ギャップフレーム（スキル / スコープ / 背書 / ネットワーク）を棚卸し、SMART プランに落とし込む。
 
   - icon:
       src: /icons/fork.svg
@@ -63,7 +63,7 @@ features:
 <!--
   Translation status:
   Source file : docs/index.md
-  Source commit: f5f491c
+  Source commit: bd9c50b
   Translated  : 2026-04-21
   Status      : up-to-date
 -->

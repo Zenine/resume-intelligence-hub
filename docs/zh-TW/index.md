@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Resume Intelligence Hub"
   text: "給自己搭一個職涯中樞"
-  tagline: "一個 Git 儲存庫存所有履歷底稿，一套方法論管定位，一個 AI 幫你幹髒活——從找職缺到申報研究計畫都在這兒。"
+  tagline: "履歷、面試準備、研究計畫申報的單一事實來源。職涯羅盤——幫你鎖定下一個位子、攤開落差、跑出這一季的計畫。"
   image:
     src: /hero.svg
     alt: Resume Intelligence Hub
@@ -28,8 +28,8 @@ features:
       src: /icons/target.svg
       width: 48
       height: 48
-    title: 定位鎖
-    details: 目標職級和產業寫在 AGENTS.md 最上面。之後 AI 每次產出都按這個來，不用你反覆交代。
+    title: 職涯羅盤
+    details: 鎖定向上 1–2 級的 stretch 目標，寫在 AGENTS.md 最上面，之後每份履歷都按這個走。每一季按四維框架（技能 / 範圍 / 背書 / 人脈）攤開落差，轉成這一季能跑的 SMART 計畫。
 
   - icon:
       src: /icons/fork.svg
@@ -63,7 +63,7 @@ features:
 <!--
   Translation status:
   Source file : docs/index.md
-  Source commit: f5f491c
+  Source commit: bd9c50b
   Translated  : 2026-04-21
   Status      : up-to-date
 -->

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Resume Intelligence Hub"
   text: "Your private career OS"
-  tagline: "A single-source-of-truth Git repo, an opinionated methodology, and an AI agent that does the heavy lifting — from JD sourcing to grant applications."
+  tagline: "Source of truth for your resumes, interview prep, and grant applications. Career compass that names your next stretch target, diffs the gap, and ships this quarter's plan."
   image:
     src: /hero.svg
     alt: Resume Intelligence Hub
@@ -28,8 +28,8 @@ features:
       src: /icons/target.svg
       width: 48
       height: 48
-    title: Positioning lock
-    details: Set target role level and industry once at the top of AGENTS.md. Every subsequent artifact biases to it — no reprompting.
+    title: Career compass
+    details: Name your stretch target 1–2 levels up, locked at the top of AGENTS.md so every resume biases to it. Diff the four-gap frame (skill / scope / credential / network) each quarter and ship a SMART plan.
 
   - icon:
       src: /icons/fork.svg

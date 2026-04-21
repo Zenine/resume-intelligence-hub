@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Resume Intelligence Hub"
   text: "给自己搭一个职业中枢"
-  tagline: "一个 Git 仓库存所有履历底稿，一套方法论管定位，一个 AI 帮你干脏活——从找岗位到申课题都在这儿。"
+  tagline: "简历、面试准备、课题申报的单一事实来源。职业罗盘——帮你定位下一把椅子、摊开差距、跑出这个季度的计划。"
   image:
     src: /hero.svg
     alt: Resume Intelligence Hub
@@ -28,8 +28,8 @@ features:
       src: /icons/target.svg
       width: 48
       height: 48
-    title: 定位锁
-    details: 目标岗位层级和行业写在 AGENTS.md 最上面。往后 AI 每次产出都按这个来，不用你反复交代。
+    title: 职业罗盘
+    details: 定位向上 1-2 级的 stretch 目标，锁在 AGENTS.md 最上面，之后每份简历都按这个偏置。每季度按四维差距（技能 / 范围 / 背书 / 人脉）复盘一次，转成这季度的 SMART 计划。
 
   - icon:
       src: /icons/fork.svg
@@ -63,7 +63,7 @@ features:
 <!--
   Translation status:
   Source file : docs/index.md
-  Source commit: f5f491c
+  Source commit: bd9c50b
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
