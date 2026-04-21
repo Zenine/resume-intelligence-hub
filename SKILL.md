@@ -1,6 +1,6 @@
 ---
 name: resume-intelligence-hub
-description: Bootstrap and operate a personal career intelligence hub — a private Git repo that serves as the single source of truth for resumes, interview prep, and (optionally) research/grant applications, with a pre-submission verification workflow. Works for any industry and any seniority. Use when a user wants to set up an AI-driven resume/career management system, consolidate scattered resumes, generate JD-tailored applications, prepare interviews, or adopt this methodology for themselves or a friend. Trigger phrases include "帮我搭个简历库", "resume hub", "career intelligence", "build my career repo", "JD 定制简历", "面试教练", "课题申报简历" (research track only).
+description: Bootstrap and operate a personal career intelligence hub — a private Git repo that is both the single source of truth (resumes, interview prep, research/grant applications, pre-submission verification) and a career compass (stretch target, capability gap, quarterly plan). Works for any industry and any seniority. Use when a user wants to set up an AI-driven resume/career management system, consolidate scattered resumes, run a gap analysis against a stretch target, generate JD-tailored applications, prepare interviews, or adopt this methodology for themselves or a friend. Trigger phrases include "帮我搭个简历库", "resume hub", "career intelligence", "build my career repo", "JD 定制简历", "面试教练", "盘一下差距" / "gap analysis", "课题申报简历" (research track only).
 ---
 
 # Resume Intelligence Hub
@@ -12,6 +12,7 @@ An opinionated methodology + scaffolding for a personal, AI-driven career manage
 **Use when:**
 - User wants to create a personal resume/CV management system from scratch
 - User has scattered resumes/CVs and wants to consolidate into a single source of truth
+- User needs to **name a stretch target** and **run a gap analysis** between their current position and that target (the career-compass use case)
 - User needs JD-tailored resume generation
 - User wants interview coaching backed by their actual experience library
 - User is applying for academic grants / research funding and needs a research-profile track (**optional**)
@@ -69,7 +70,7 @@ The hub's workflows are built on established frameworks. Use the framework **nam
 
 **Due diligence — triangulation**: every load-bearing claim needs ≥2 independent public sources before submission. Foundation of `workflows/verification.md`.
 
-**Stretch target heuristic — "1-2 levels up, 1.5-3x comp, 70% match"**:
+**Stretch target heuristic — "1-2 levels up, 1.2-3x comp, 70% match"**:
 - Target roles **1-2 levels above current title**. Same-level switches rarely earn the switching cost; 3+ levels is usually delusional.
 - External moves command a premium: **floor 1.2-1.5x current total comp**; **stretch ceiling 2-3x** when simultaneously leveling up AND shifting company type (e.g., enterprise → fast-growing startup with equity).
 - Apply at **~70% match**, not 100%. Senior hires are expected to grow into the role.
@@ -80,6 +81,21 @@ The hub's workflows are built on established frameworks. Use the framework **nam
 ## AI IDE compatibility
 
 The canonical instruction file is **`AGENTS.md`** — the cross-IDE standard (Claude Code, Cursor, Codex, Cline, Windsurf, and others read it). The hub works with any AI IDE that loads a markdown context file. The onboarding section of `readme.md` walks users through wiring it to their specific IDE (symlink for Claude Code legacy, copy/symlink into `.cursor/rules/`, `.windsurfrules`, `.github/copilot-instructions.md`, etc.).
+
+
+## Intent routing: which flow to run
+
+Before doing anything, figure out whether a hub already exists in the user's working directory and what the user is actually asking for:
+
+| Hub exists? | User intent | Action |
+|-------------|-------------|--------|
+| No | Build a hub / consolidate resumes | **Run the bootstrap interview below** (Q1–Q7, then Steps 2–7) |
+| No | Gap analysis / JD tailoring / interview prep | Run bootstrap first — you can't analyze or tailor against an empty `profiles/`. Tell the user; then run the interview |
+| Yes | Direction-setting / "where should I aim next" / gap analysis | Go to `workflows/career-planning.md`. Skip this section |
+| Yes | Anything else (JD sourcing / tailoring / interview / verification / grant) | Go to the corresponding `workflows/*.md`. Skip this section |
+| Yes, but `profiles/master.md` is thin | Any workflow request | Pause the requested workflow; seed profiles from existing materials first (see `workflows/career-planning.md` Step 1 "garbage-in" warning) |
+
+Detecting an existing hub: look for `AGENTS.md` + `profiles/master.md` in the current directory (or the directory the user pointed you at).
 
 ## Setup workflow: the bootstrap interview
 
@@ -190,7 +206,7 @@ Don't leave the user staring at a half-empty hub. Scan the seeded profiles and w
 - Write the first 2-3 STAR stories in `profiles/stories.md` (examples already provided as format reference)
 - If research track enabled: populate at least one row in each of the publications/patents/projects tables
 
-Tell the user: "You have a working hub. Next session, say '继续完善档案' / 'continue filling in profiles' and I'll pick up the todo list."
+Tell the user: "You have a working hub. The natural next step is **`workflows/career-planning.md`** — say '盘一下差距' / 'diff the gap' and I'll help you name a stretch target and turn it into this quarter's SMART plan. Or just say '继续完善档案' to keep filling in profiles first."
 
 ## Template conventions for filling content
 
@@ -207,6 +223,7 @@ All templates use **plain-prose instructions instead of `{{placeholder}}` tokens
 
 Once the hub exists and AGENTS.md is loaded, the agent handles these. See workflow files next to this SKILL.md:
 
+- `workflows/career-planning.md` — **direction-setting**. Name the stretch target, diff the four-gap frame (skill / scope / credential / network), write back a quarterly SMART plan into `todo.md`. Run first after bootstrap, re-run every ~quarter.
 - `workflows/jd-sourcing.md` — **find** good JDs (before you can tailor one) — channel selection by region/seniority/field, stretch-target calibration, warm-intro protocol
 - `workflows/jd-tailored-resume.md` — generate a custom resume for a specific JD
 - `workflows/interview-prep.md` — predict questions, prepare STAR answers, tech review
@@ -238,8 +255,8 @@ Install any of the above with `npx skills add <owner/repo@skill> -g -y`. They co
 
 ## Anti-patterns to avoid
 
-- **Don't** assume tech/engineering context. Ask in Q2. A marketing manager and a mechanical engineer need very different keyword vocabularies.
-- **Don't** force the research track on users who don't need it. Ask Q4 first.
+- **Don't** assume tech/engineering context. Infer from Q2 materials; confirm in Q3. A marketing manager and a mechanical engineer need very different keyword vocabularies.
+- **Don't** force the research track on users who don't need it. Ask Q5 first and default to `no` if they hesitate.
 - **Don't** mix Chinese and English in the hub. The framework supports both, but pick one per hub.
 - **Don't** copy sensitive originals (IDs, contracts, salary slips) into the repo. Use `verification/references.md` path-references.
 - **Don't** let `todo.md` accumulate `[x]` completed items. Move to `changelog.md` each session.
