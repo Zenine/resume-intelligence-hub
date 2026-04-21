@@ -1,12 +1,10 @@
-> **Language**: **English** · [简体中文](README.zh.md) · [日本語](README.ja.md) · [繁體中文](README.zh-TW.md)
-
 # resume-intelligence-hub
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/Docs-online-6366f1?style=flat&logo=vitepress&logoColor=white)](https://zenine.github.io/resume-intelligence-hub/)
+[![Docs](https://img.shields.io/badge/Docs-online-6366f1?style=flat&logo=vitepress&logoColor=white)](https://zenine.github.io/resume-intelligence-hub-site/)
 [![Skills.sh](https://img.shields.io/badge/skills.sh-listed-f59e0b?style=flat)](https://skills.sh/Zenine/resume-intelligence-hub)
 
-> **[📖 Documentation & landing page →](https://zenine.github.io/resume-intelligence-hub/)**
+> **[📖 Documentation & landing page →](https://zenine.github.io/resume-intelligence-hub-site/)** (available in English · 简体中文 · 日本語 · 繁體中文)
 
 > An opinionated AI-agent **skill** that bootstraps a personal career intelligence hub — a private Git repo that is **both (a) your single source of truth** (resumes, interview prep, grant applications, pre-submission verification) **and (b) your career compass** — the seat you want 1–2 levels up, the explicit gap between you and that seat, and what to close this quarter. Works in any AI IDE that reads `AGENTS.md` (Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot, ...).
 

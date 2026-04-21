@@ -31,10 +31,6 @@ gcp-key*.json
 credentials.json
 key.json
 
-# VitePress
-docs/.vitepress/dist/
-docs/.vitepress/cache/
-
 # Misc
 *.tmp
 *.log
