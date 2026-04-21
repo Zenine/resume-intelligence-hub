@@ -21,42 +21,42 @@ features:
       src: /icons/compass.svg
       width: 48
       height: 48
-    title: 只有一个版本的"你"
+    title: 单一事实来源
     details: 所有履历事实只在 profiles/ 里写一份。每份简历、求职信、申报书都是当场根据它派生的——不用维护七八个版本的简历。
 
   - icon:
       src: /icons/target.svg
       width: 48
       height: 48
-    title: 定位说一次就够
+    title: 定位锁
     details: 目标岗位层级和行业写在 AGENTS.md 最上面。往后 AI 每次产出都按这个来，不用你反复交代。
 
   - icon:
       src: /icons/fork.svg
       width: 48
       height: 48
-    title: 求职和课题分开做
+    title: 双轨分离
     details: 招聘简历和基金申报书格式、语气、侧重完全不一样。两边数据源分开，只在需要时开启科研那条线。
 
   - icon:
       src: /icons/shield.svg
       width: 48
       height: 48
-    title: 投递前自查公开资料
+    title: 投递前核查
     details: 冲高阶岗或报课题前，把简历里每条声明（学历、头衔、项目号、数字）逐条在公开来源过一遍，把风险项提前改掉，而不是等对方查到。
 
   - icon:
       src: /icons/globe.svg
       width: 48
       height: 48
-    title: 不绑死在一家 AI IDE
+    title: 跨 IDE 通用
     details: 核心指令文件走 AGENTS.md 这个跨 IDE 标准。Claude Code、Cursor、Codex、Cline、Windsurf、GitHub Copilot 都能读，换工具不用重搭。
 
   - icon:
       src: /icons/book.svg
       width: 48
       height: 48
-    title: 方法论都是成名框架
+    title: 成熟方法论背书
     details: Google XYZ 公式、STAR、BEI、Heilmeier 9 问、stretch target、三角验证——每一条都点出出处，方便你想深入时自己顺藤摸瓜。
 ---
 
