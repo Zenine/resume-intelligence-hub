@@ -19,44 +19,50 @@ The repo ships a workflow ([`gsc-sitemap-notify.yml`](workflows/gsc-sitemap-noti
 2. In Google Search Console → select the property `https://zenine.github.io/resume-intelligence-hub/` → ⚙ **Settings** → **Users and permissions** → **Add user**.
 3. Paste the service account email. Permission level: **Owner** (required for sitemap submission via API).
 
-## 3 · Add the key as a GitHub Actions secret
+## 3 · Verify locally first (recommended)
 
-1. Open <https://github.com/Zenine/resume-intelligence-hub/settings/secrets/actions>.
-2. **New repository secret**:
-   - Name: `GSC_SERVICE_ACCOUNT`
-   - Value: paste the entire contents of the JSON file (the whole `{ ... }` blob).
-3. Save.
+Before messing with GitHub secrets, confirm the key actually works against Google's API. Three ways to point the script at your JSON key:
 
-## 4 · Test the workflow once
+```bash
+# (a) env var — one-shot:
+export GSC_SERVICE_ACCOUNT="$(cat ~/Downloads/service-account.json)"
+node scripts/submit-sitemap.mjs
 
-Manually trigger: <https://github.com/Zenine/resume-intelligence-hub/actions/workflows/gsc-sitemap-notify.yml> → **Run workflow**.
+# (b) custom file path:
+export GSC_SERVICE_ACCOUNT_FILE=~/Downloads/service-account.json
+node scripts/submit-sitemap.mjs
 
-If successful, the log will show:
+# (c) default path (no env var needed):
+mkdir -p ~/.config/resume-intelligence-hub
+mv ~/Downloads/service-account.json ~/.config/resume-intelligence-hub/gsc-service-account.json
+node scripts/submit-sitemap.mjs
+```
+
+Expected output:
 
 ```
 PUT https://www.googleapis.com/webmasters/v3/sites/.../sitemaps/sitemap.xml → 200 OK
 Sitemap submitted / refreshed successfully.
 ```
 
+If you see `401`, the service account isn't added to the GSC property (or is a non-Owner). If `403`, the Search Console API isn't enabled. Fix before moving on.
+
+## 4 · Add the key as a GitHub Actions secret
+
+1. Open <https://github.com/Zenine/resume-intelligence-hub/settings/secrets/actions>.
+2. **New repository secret**:
+   - Name: `GSC_SERVICE_ACCOUNT`
+   - Value: paste the entire contents of the JSON file (the whole `{ ... }` blob, including the `-----BEGIN PRIVATE KEY-----` line breaks). GitHub preserves newlines inside secrets, don't re-quote.
+3. Save.
+
+## 5 · Trigger the workflow once
+
+<https://github.com/Zenine/resume-intelligence-hub/actions/workflows/gsc-sitemap-notify.yml> → **Run workflow**. Same output as Step 3.
+
 From this point on:
 - Every `main` push → VitePress deploys → sitemap re-submitted automatically
 - Every Monday 03:00 UTC → sitemap re-submitted (safety net)
 - You can re-run manually anytime via the Actions UI
-
-## Running locally (optional)
-
-If you want to test the script without pushing to CI:
-
-```bash
-# Either set the env var:
-export GSC_SERVICE_ACCOUNT="$(cat ~/Downloads/service-account.json)"
-
-# Or drop the file at the default path:
-mkdir -p ~/.config/resume-intelligence-hub
-mv ~/Downloads/service-account.json ~/.config/resume-intelligence-hub/gsc-service-account.json
-
-node scripts/submit-sitemap.mjs
-```
 
 ## Security notes
 

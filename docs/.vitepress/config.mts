@@ -15,6 +15,8 @@ export default defineConfig({
     // Open Graph / Twitter — site-wide static
     ['meta', { property: 'og:site_name', content: 'Resume Intelligence Hub' }],
     ['meta', { property: 'og:type', content: 'website' }],
+    // TODO: swap to a 1200×630 PNG — Facebook / LinkedIn / Twitter card
+    // renderers don't reliably rasterize SVG. Tracked for a future commit.
     ['meta', { property: 'og:image', content: 'https://zenine.github.io/resume-intelligence-hub/hero.svg' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://zenine.github.io/resume-intelligence-hub/hero.svg' }],
@@ -66,8 +68,9 @@ export default defineConfig({
     const title = pageData.title && pageData.title !== siteData.title
       ? `${pageData.title} | ${siteData.title}`
       : siteData.title
+    // `index.md` → '' (site root), `zh/index.md` → 'zh/' (locale root)
     const relPath = pageData.relativePath
-      .replace(/(?:^|\/)index\.md$/, '$1'.endsWith('/') ? '' : '')
+      .replace(/index\.md$/, '')
       .replace(/\.md$/, '.html')
     const url = `https://zenine.github.io/resume-intelligence-hub/${relPath}`
     return [
