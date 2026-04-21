@@ -85,7 +85,7 @@ In your AI IDE, say any of:
 - "I've got 5 resumes across different folders — consolidate them into one hub" — **bootstrap**
 - "I want to jump Senior→Staff — diff the gap and give me a plan for this quarter" — **career planning & gap analysis**
 - "A friend sent me this Staff PM JD — triage it, and if it's worth applying, tailor my resume against it" — **JD triage + tailored resume**
-- "I'm aiming Senior→Staff — surface stretch-target roles posted in the last two weeks" — **active JD sourcing**
+- "Surface stretch-target roles in my space posted in the last two weeks" — **active JD sourcing**
 - "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers" — **interview prep**
 - "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn" — **pre-submission verification**
 - "Draft an NSFC / NIH grant application profile" — **grant application** (if research track enabled)

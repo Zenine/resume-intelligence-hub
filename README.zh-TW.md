@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : README.md
-  Source commit: a53d62a
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -90,13 +90,13 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 ## 使用方式
 
 在 AI IDE 裡說任意一句：
-- "把散落在幾個資料夾的履歷合併成一個庫" / "I've got 5 resumes across different folders — consolidate them into one hub" — **bootstrap**
-- "想從 Senior 跳 Staff，盤一下我跟那個位子的落差，排個這一季的計畫" / "I want to jump Senior→Staff — diff the gap and give me a plan for this quarter" — **職涯規劃 & 差距盤點**
-- "朋友傳了個 Staff PM 的 JD，值得投嗎？值得就順手客製一版履歷" / "A friend sent me this Staff PM JD — triage it, and if it's worth applying, tailor my resume against it" — **JD 篩選 + 客製履歷**
-- "想從 Senior 跳 Staff，掃一下最近兩週市面上合適的 stretch 機會" / "I'm aiming Senior→Staff — surface stretch-target roles posted in the last two weeks" — **主動 JD 搜尋**
-- "週四有個現場面試，對著這份 JD 幫我預測題目並排練一遍" / "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers" — **面試準備**
-- "投出去前，把履歷裡的數字跟我 GitHub、論文、LinkedIn 對一遍，別有出入" / "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn" — **投遞前查核**
-- "幫我生成國科會（NSTC）研究計畫的申報履歷" / "Draft an NSTC / NIH grant application profile" — **研究計畫申報**（需開啟研究軌）
+- "把散落在幾個資料夾的履歷合併成一個庫"（consolidate scattered resumes into one hub）— **bootstrap**
+- "想從 Senior 跳 Staff，盤一下我跟那個位子的落差，排個這一季的計畫"（diff the gap, ship this quarter's plan）— **職涯規劃 & 差距盤點**
+- "朋友傳了個 Staff PM 的 JD，值得投嗎？值得就順手客製一版履歷"（JD triage + tailored resume）— **JD 篩選 + 客製履歷**
+- "掃一下最近兩週市面上適合我背景的 stretch 職缺"（active JD sourcing）— **主動 JD 搜尋**
+- "週四有個現場面試，對著這份 JD 幫我預測題目並排練一遍"（predict questions + STAR rehearsal）— **面試準備**
+- "投出去前，把履歷裡的數字跟我 GitHub、論文、LinkedIn 對一遍，別有出入"（pre-submission fact-check）— **投遞前查核**
+- "幫我生成國科會（NSTC）研究計畫的申報履歷"（draft an NSTC / NIH grant profile）— **研究計畫申報**（需開啟研究軌）
 
 Skill 的 `SKILL.md` 檔案指示 agent 完整的初始化流程：7 問訪談（語言、現有資料、產業、職級、是否開研究軌、履歷輸出語言、儲存庫位置）→ 生成架構 → 寫入「接下來要做什麼」清單。
 

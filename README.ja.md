@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : README.md
-  Source commit: a53d62a
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -90,13 +90,13 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 ## 使い方
 
 お使いの AI IDE で次のいずれかを言えばよい：
-- "I've got 5 resumes across different folders — consolidate them into one hub"（散らばった履歴書をひとつのハブに統合）— **初期化**
-- "I want to jump Senior→Staff — diff the gap and give me a plan for this quarter"（Senior → Staff 転換、ギャップ棚卸し + 四半期プラン）— **キャリアプランニング & ギャップ分析**
-- "A friend sent me this Staff PM JD — triage it, and if it's worth applying, tailor my resume against it"（JD の選別 + カスタム履歴書）— **JD 選別 + カスタム履歴書**
-- "I'm aiming Senior→Staff — surface stretch-target roles posted in the last two weeks"（直近 2 週間のストレッチ求人を洗い出す）— **アクティブ JD ソーシング**
-- "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers"（対面面接の質問予測 + STAR 模擬）— **面接準備**
-- "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn"（送信前に GitHub / 論文 / LinkedIn と数字突合）— **応募前検証**
-- "Draft an NSFC / NIH grant application profile"（NSFC / NIH 等の研究課題申請プロファイル）— **研究課題申請**（リサーチトラック有効時）
+- "散らばった履歴書をハブにまとめて"（consolidate scattered resumes into one hub）— **初期化**
+- "Senior から Staff に上がりたい、ギャップを棚卸しして今期のプランを出して"（diff the gap, ship this quarter's plan）— **キャリアプランニング & ギャップ分析**
+- "友達から届いた Staff PM の JD、刺さるか見て、刺さるなら履歴書カスタムして"（JD triage + tailored resume）— **JD 選別 + カスタム履歴書**
+- "直近 2 週間で俺の経歴に合う stretch 求人を洗い出して"（active JD sourcing）— **アクティブ JD ソーシング**
+- "木曜オンサイト、この JD で想定質問と STAR リハに付き合って"（predict questions + STAR rehearsal）— **面接準備**
+- "送る前に履歴書の数字を GitHub / 論文 / LinkedIn と突合して"（pre-submission fact-check）— **応募前検証**
+- "NSFC 青年基金 / NIH R01 の研究課題申請プロファイルを作って"（draft an NSFC / NIH grant profile）— **研究課題申請**（リサーチトラック有効時）
 
 Skill の `SKILL.md` ファイルが初期化フロー全体をエージェントに指示する：7 問インタビュー（言語、既存資料、業界、シニアリティ、リサーチトラック有無、履歴書出力言語、リポジトリ場所）、その後スキャフォールド、最後に「次のステップ」パンチリストを書き出す。
 

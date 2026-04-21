@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : README.md
-  Source commit: a53d62a
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -90,13 +90,13 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 ## 使用方式
 
 在 AI IDE 里说任意一句：
-- "把散落在几个文件夹的简历合并成一个库" / "I've got 5 resumes across different folders — consolidate them into one hub" — **bootstrap**
-- "想从 Senior 跳 Staff，盘一下我跟那把椅子的差距，排个这季度的计划" / "I want to jump Senior→Staff — diff the gap and give me a plan for this quarter" — **职业规划 & 差距盘点**
-- "朋友发了个 Staff PM 的 JD，值得投吗？值得就顺手定制一版简历" / "A friend sent me this Staff PM JD — triage it, and if it's worth applying, tailor my resume against it" — **JD 筛分 + 定制简历**
-- "想从 Senior 跳 Staff，扫一下最近两周市面上合适的 stretch 机会" / "I'm aiming Senior→Staff — surface stretch-target roles posted in the last two weeks" — **主动 JD 搜寻**
-- "周四有个现场面，对着这份 JD 帮我预测题目并排练一遍" / "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers" — **面试准备**
-- "投出去前，把简历里的数字跟我 GitHub、论文、LinkedIn 对一遍，别有出入" / "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn" — **投递前核查**
-- "帮我生成国自然青基的申报简历" / "Draft an NSFC / NIH grant application profile" — **课题申报**（需开启研究线）
+- "把散落在几个文件夹的简历合并成一个库"（consolidate scattered resumes into one hub）— **bootstrap**
+- "想从 Senior 跳 Staff，盘一下我跟那把椅子的差距，排个这季度的计划"（diff the gap, ship this quarter's plan）— **职业规划 & 差距盘点**
+- "朋友发了个 Staff PM 的 JD，值得投吗？值得就顺手定制一版简历"（JD triage + tailored resume）— **JD 筛分 + 定制简历**
+- "扫一下最近两周市面上适合我背景的 stretch 岗位"（active JD sourcing）— **主动 JD 搜寻**
+- "周四有个现场面，对着这份 JD 帮我预测题目并排练一遍"（predict questions + STAR rehearsal）— **面试准备**
+- "投出去前，把简历里的数字跟我 GitHub、论文、LinkedIn 对一遍，别有出入"（pre-submission fact-check）— **投递前核查**
+- "帮我生成国自然青基的申报简历"（draft an NSFC / NIH grant profile）— **课题申报**（需开启研究线）
 
 Skill 的 `SKILL.md` 文件指示 agent 完整的初始化流程：7 问访谈（语言、现有材料、行业、职级、是否开研究线、简历输出语言、仓库位置）→ 生成脚手架 → 写入"接下来要做什么"清单。
 
