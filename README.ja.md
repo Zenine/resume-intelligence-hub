@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : README.md
-  Source commit: 47251d8
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -90,13 +90,13 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 ## 使い方
 
 お使いの AI IDE で次のいずれかを言えばよい：
-- "把散落在几个文件夹的简历合并成一个库" / "I've got 5 resumes across different folders — consolidate them into one hub"（散らばった履歴書をひとつのハブに統合）— **初期化**
-- "想从 Senior 跳 Staff，盘一下我跟那把椅子的差距，排个这季度的计划" / "I want to jump Senior→Staff — diff the gap and give me a plan for this quarter"（Senior → Staff 転換、ギャップ棚卸し + 四半期プラン）— **キャリアプランニング & ギャップ分析**
-- "朋友发了个 Staff PM 的 JD，值得投吗？值得就顺手定制一版简历" / "A friend sent me this Staff PM JD — triage it, and if it's worth applying, tailor my resume against it"（JD の選別 + カスタム履歴書）— **JD 選別 + カスタム履歴書**
-- "想从 Senior 跳 Staff，扫一下最近两周市面上合适的 stretch 机会" / "I'm aiming Senior→Staff — surface stretch-target roles posted in the last two weeks"（直近 2 週間のストレッチ求人を洗い出す）— **アクティブ JD ソーシング**
-- "周四有个现场面，对着这份 JD 帮我预测题目并排练一遍" / "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers"（対面面接の質問予測 + STAR 模擬）— **面接準備**
-- "投出去前，把简历里的数字跟我 GitHub、论文、LinkedIn 对一遍，别有出入" / "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn"（送信前に GitHub / 論文 / LinkedIn と数字突合）— **応募前検証**
-- "帮我生成国自然青基的申报简历" / "Draft an NSFC / NIH grant application profile"（NSFC / NIH 等の研究課題申請プロファイル）— **研究課題申請**（リサーチトラック有効時）
+- "I've got 5 resumes across different folders — consolidate them into one hub"（散らばった履歴書をひとつのハブに統合）— **初期化**
+- "I want to jump Senior→Staff — diff the gap and give me a plan for this quarter"（Senior → Staff 転換、ギャップ棚卸し + 四半期プラン）— **キャリアプランニング & ギャップ分析**
+- "A friend sent me this Staff PM JD — triage it, and if it's worth applying, tailor my resume against it"（JD の選別 + カスタム履歴書）— **JD 選別 + カスタム履歴書**
+- "I'm aiming Senior→Staff — surface stretch-target roles posted in the last two weeks"（直近 2 週間のストレッチ求人を洗い出す）— **アクティブ JD ソーシング**
+- "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers"（対面面接の質問予測 + STAR 模擬）— **面接準備**
+- "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn"（送信前に GitHub / 論文 / LinkedIn と数字突合）— **応募前検証**
+- "Draft an NSFC / NIH grant application profile"（NSFC / NIH 等の研究課題申請プロファイル）— **研究課題申請**（リサーチトラック有効時）
 
 Skill の `SKILL.md` ファイルが初期化フロー全体をエージェントに指示する：7 問インタビュー（言語、既存資料、業界、シニアリティ、リサーチトラック有無、履歴書出力言語、リポジトリ場所）、その後スキャフォールド、最後に「次のステップ」パンチリストを書き出す。
 
