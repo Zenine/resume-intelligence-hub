@@ -51,7 +51,7 @@ Rare-and-valuable skills build leverage. When doing gap analysis, the question i
 
 ## Job search strategy
 
-**Stretch target heuristic** ("1-2 levels up, 1.5-3x comp, 70% match")
+**Stretch target heuristic** ("1-2 levels up, 1.2-3x comp, 70% match")
 
 A widely-used recruiter heuristic for external moves:
 
