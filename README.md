@@ -1,5 +1,11 @@
 # resume-intelligence-hub
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/Docs-online-6366f1?style=flat&logo=vitepress&logoColor=white)](https://zenine.github.io/resume-intelligence-hub/)
+[![Skills.sh](https://img.shields.io/badge/skills.sh-listed-f59e0b?style=flat)](https://skills.sh/Zenine/resume-intelligence-hub)
+
+> **[📖 Documentation & landing page →](https://zenine.github.io/resume-intelligence-hub/)**
+
 > An opinionated AI-agent **skill** that bootstraps a personal career intelligence hub — a private Git repo that acts as the single source of truth for resumes, interview prep, grant applications, and pre-submission verification. Works in any AI IDE that reads `AGENTS.md` (Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot, ...).
 
 Unlike most career skills in the ecosystem — which are one-shot generators ("paste a JD, get a resume") — this one is a **framework**. It scaffolds a persistent, version-controlled hub and then powers ongoing job search, interview prep, grant applications, and fact-checking on top of that hub.
