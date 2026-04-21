@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : docs/quick-start.md
-  Source commit: f5f491c
+  Source commit: 47251d8
   Translated  : 2026-04-21
   Status      : up-to-date
 -->

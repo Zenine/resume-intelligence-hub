@@ -1,8 +1,8 @@
 <!--
   Translation status:
   Source file : README.md
-  Source commit: ff40f81 (r2 — career compass + career-planning workflow)
-  Translated  : 2026-04-21 (r2)
+  Source commit: 47251d8
+  Translated  : 2026-04-21
   Status      : up-to-date
 -->
 
