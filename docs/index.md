@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Your private career OS
 
 hero:
   name: "Resume Intelligence Hub"

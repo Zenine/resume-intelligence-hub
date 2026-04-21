@@ -5,10 +5,38 @@ export default defineConfig({
   title: 'Resume Intelligence Hub',
   titleTemplate: ':title | Resume Intelligence Hub',
 
+  sitemap: {
+    hostname: 'https://zenine.github.io/resume-intelligence-hub/',
+  },
+
   head: [
     ['link', { rel: 'icon', href: '/resume-intelligence-hub/hero.svg', type: 'image/svg+xml' }],
     ['meta', { name: 'theme-color', content: '#6366f1' }],
+    // Open Graph / Twitter — site-wide static
+    ['meta', { property: 'og:site_name', content: 'Resume Intelligence Hub' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:image', content: 'https://zenine.github.io/resume-intelligence-hub/hero.svg' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: 'https://zenine.github.io/resume-intelligence-hub/hero.svg' }],
   ],
+
+  transformHead({ pageData, siteData }) {
+    const description = pageData.description || siteData.description
+    const title = pageData.title && pageData.title !== siteData.title
+      ? `${pageData.title} | ${siteData.title}`
+      : siteData.title
+    const relPath = pageData.relativePath
+      .replace(/(?:^|\/)index\.md$/, '$1'.endsWith('/') ? '' : '')
+      .replace(/\.md$/, '.html')
+    const url = `https://zenine.github.io/resume-intelligence-hub/${relPath}`
+    return [
+      ['meta', { property: 'og:title', content: title }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:url', content: url }],
+      ['meta', { name: 'twitter:title', content: title }],
+      ['meta', { name: 'twitter:description', content: description }],
+    ]
+  },
 
   markdown: {
     config: (md) => {

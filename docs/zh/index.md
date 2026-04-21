@@ -1,5 +1,6 @@
 ---
 layout: home
+title: 给自己搭一个职业中枢
 
 hero:
   name: "Resume Intelligence Hub"
@@ -63,7 +64,7 @@ features:
 <!--
   Translation status:
   Source file : docs/index.md
-  Source commit: b5a3649
+  Source commit: HEAD_PLACEHOLDER
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
