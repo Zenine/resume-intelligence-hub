@@ -22,6 +22,15 @@ pnpm-debug.log*
 .env.*
 *.local
 
+# Service account keys — GCP / GSC / any Google / cloud credential files
+# (even if dropped into the repo dir by accident, git won't stage them)
+*service-account*.json
+*-service-account.json
+gcp-key*.json
+*.gcp.json
+credentials.json
+key.json
+
 # VitePress
 docs/.vitepress/dist/
 docs/.vitepress/cache/
