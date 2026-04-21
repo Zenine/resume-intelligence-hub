@@ -63,7 +63,7 @@ features:
 <!--
   Translation status:
   Source file : docs/index.md
-  Source commit: HEAD_PLACEHOLDER
+  Source commit: b5a3649
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
