@@ -105,6 +105,86 @@ export default defineConfig({
         langMenuLabel: '切换语言',
       },
     },
+    ja: {
+      label: '日本語',
+      lang: 'ja',
+      link: '/ja/',
+      description: 'AI IDE で個人のキャリアインテリジェンスハブを一行で構築——履歴書カスタマイズ、面接準備、研究課題申請、応募前検証。AGENTS.md でクロス IDE 対応。',
+      themeConfig: {
+        nav: [
+          { text: 'クイックスタート', link: '/ja/quick-start' },
+          { text: 'フレームワーク', link: '/ja/frameworks' },
+          { text: 'デザイン哲学', link: '/ja/philosophy' },
+          { text: 'GitHub', link: 'https://github.com/Zenine/resume-intelligence-hub' },
+        ],
+        sidebar: {
+          '/ja/': [
+            {
+              text: 'はじめに',
+              items: [
+                { text: 'クイックスタート', link: '/ja/quick-start' },
+                { text: 'デザイン哲学', link: '/ja/philosophy' },
+              ],
+            },
+            {
+              text: 'リファレンス',
+              items: [
+                { text: 'フレームワーク', link: '/ja/frameworks' },
+              ],
+            },
+          ],
+        },
+        outline: { label: 'ページナビ' },
+        docFooter: { prev: '前のページ', next: '次のページ' },
+        lastUpdated: { text: '最終更新' },
+        darkModeSwitchLabel: 'テーマ',
+        lightModeSwitchTitle: 'ライトモードに切り替え',
+        darkModeSwitchTitle: 'ダークモードに切り替え',
+        sidebarMenuLabel: 'メニュー',
+        returnToTopLabel: 'トップへ戻る',
+        langMenuLabel: '言語を切り替え',
+      },
+    },
+    'zh-TW': {
+      label: '繁體中文',
+      lang: 'zh-TW',
+      link: '/zh-TW/',
+      description: '在 AI IDE 裡一句話搭起個人職涯發展中樞——履歷客製、面試準備、研究計畫申報、投遞前查核。透過 AGENTS.md 跨 IDE 通用。',
+      themeConfig: {
+        nav: [
+          { text: '快速開始', link: '/zh-TW/quick-start' },
+          { text: '方法論', link: '/zh-TW/frameworks' },
+          { text: '設計哲學', link: '/zh-TW/philosophy' },
+          { text: 'GitHub', link: 'https://github.com/Zenine/resume-intelligence-hub' },
+        ],
+        sidebar: {
+          '/zh-TW/': [
+            {
+              text: '入門',
+              items: [
+                { text: '快速開始', link: '/zh-TW/quick-start' },
+                { text: '設計哲學', link: '/zh-TW/philosophy' },
+              ],
+            },
+            {
+              text: '參考',
+              items: [
+                { text: '方法論', link: '/zh-TW/frameworks' },
+              ],
+            },
+          ],
+        },
+        outline: { label: '頁面導覽' },
+        docFooter: { prev: '上一頁', next: '下一頁' },
+        lastUpdated: { text: '最後更新於' },
+        darkModeSwitchLabel: '主題',
+        lightModeSwitchTitle: '切換到淺色模式',
+        darkModeSwitchTitle: '切換到深色模式',
+        sidebarMenuLabel: '選單',
+        returnToTopLabel: '回到頂部',
+        langMenuLabel: '切換語言',
+      },
+    },
   },
 
   themeConfig: {
@@ -128,6 +208,38 @@ export default defineConfig({
                   selectText: '选择',
                   navigateText: '切换',
                   closeText: '关闭',
+                },
+              },
+            },
+          },
+          ja: {
+            translations: {
+              button: { buttonText: '検索', buttonAriaLabel: '検索' },
+              modal: {
+                displayDetails: '詳細を表示',
+                resetButtonTitle: 'クエリをクリア',
+                backButtonTitle: '検索を閉じる',
+                noResultsText: '結果なし',
+                footer: {
+                  selectText: '選択',
+                  navigateText: '移動',
+                  closeText: '閉じる',
+                },
+              },
+            },
+          },
+          'zh-TW': {
+            translations: {
+              button: { buttonText: '搜尋', buttonAriaLabel: '搜尋' },
+              modal: {
+                displayDetails: '顯示詳細清單',
+                resetButtonTitle: '清除查詢',
+                backButtonTitle: '關閉搜尋',
+                noResultsText: '無結果',
+                footer: {
+                  selectText: '選擇',
+                  navigateText: '切換',
+                  closeText: '關閉',
                 },
               },
             },
