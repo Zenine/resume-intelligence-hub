@@ -1,63 +1,63 @@
 # 快速开始
 
-三步启动一个可用的职业 hub。
+三步把你的职业 hub 跑起来。
 
-## 1. 安装 skill
+## 1. 装 skill
 
 ```bash
 npx skills add Zenine/resume-intelligence-hub -g -y
 ```
 
-或者直接 clone：
+或者直接 clone 下来：
 
 ```bash
 git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/resume-intelligence-hub
 ```
 
-## 2. Bootstrap 你的 hub
+## 2. 初始化你自己的 hub
 
-打开你的 AI IDE（Claude Code、Cursor、Codex、Cline、Windsurf，任何能读 `AGENTS.md` 的都行）。`cd` 到 hub 要放的位置（**私有目录**，不要用公开 repo）。然后说：
+打开你用的 AI IDE（Claude Code、Cursor、Codex、Cline、Windsurf，只要能读 `AGENTS.md` 都行），`cd` 到你打算放 hub 的文件夹——**一定选私有位置**，别放在将来会公开的 repo 里。然后说：
 
 > **帮我搭个简历库**
 
-Agent 会用 7 个问题引导你：
+AI 会问你 7 个问题：
 
-1. **语言** — 中文还是英文（选一个，别混搭）
-2. **现有材料** — 把手头已有的简历/CV 喂给它（后续问题都会因此更准）
-3. **行业 / 领域** — 软件、医疗、设计、法律、学术……
-4. **目标职级** — 初级到 VP / 创始人 / PI
-5. **是否启用科研轨** — 只有需要申报课题 / 基金时才开
-6. **简历输出语言** — 中文、英文或双语
-7. **仓库位置** — 硬盘上哪个路径
+1. **语言** — 中文或英文，选一个，别混着来
+2. **现有材料** — 手头有旧简历/CV 就先发给它，下面几个问题都会因此更准
+3. **行业** — 软件、医疗、设计、法律、学术……什么都行
+4. **目标职级** — 初级、资深 IC、一线经理、总监、VP、创始人、PI，按自己情况说
+5. **要不要科研那条线** — 只在申课题 / 基金时需要开
+6. **简历输出语言** — 中文、英文或双语都行
+7. **仓库放哪** — 硬盘上的绝对路径
 
-问完 Agent 会：搭好目录结构、把定位写进 `AGENTS.md`、把旧简历归入归档、在 `todo.md` 写一份「下一步清单」。
+答完 AI 会：把目录结构搭好 → 把定位写进 `AGENTS.md` → 把你给的旧简历归档 → 在 `todo.md` 里写一份"接下来要做什么"的清单。
 
-## 3. 日常使用
+## 3. 平时怎么用
 
-Hub 搭好后，用自然语言触发五条工作流：
+Hub 搭好之后，直接用中文和 AI 说想做什么就行：
 
 | 你说 | 触发的工作流 |
 |------|--------------|
 | 帮我针对这个 JD 生成简历 | [JD 定制简历](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
-| 看看有什么合适的机会 | [主动搜寻 JD](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
+| 看看有什么合适的机会 | [主动搜岗位](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
 | 针对这个职位帮我准备面试 | [面试准备](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
-| 投递前帮我核查公开资料 | [投递前核查](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
-| 帮我生成 XX 基金申报简历 | [课题申报](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/grant-application.md)（仅科研轨） |
+| 投递前帮我核查公开资料 | [投递前自查](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/verification.md) |
+| 帮我生成国自然的申报简历 | [课题申报](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/grant-application.md)（只在科研线开启时） |
 
 ## 常见问题
 
-**「AI 没读到我的 AGENTS.md」**
+**AI 没读到我的 AGENTS.md**
 
-- Claude Code：老版本只认 `CLAUDE.md`，建 symlink：`ln -s AGENTS.md CLAUDE.md`
-- Cursor：把 `AGENTS.md` 内容复制到 `.cursor/rules/agents.mdc` 或 symlink
+- Claude Code 老版本只认 `CLAUDE.md`：`ln -s AGENTS.md CLAUDE.md` 建个软链接就行
+- Cursor：把 `AGENTS.md` 内容复制到 `.cursor/rules/agents.mdc`，或者软链
 - Windsurf：用 `.windsurfrules`
 - GitHub Copilot：用 `.github/copilot-instructions.md`
-- 其它 IDE：查一下它的上下文文件约定
+- 别的 IDE：查一下它自己的上下文文件约定
 
-**「我已经有一堆散乱的简历了，能迁移吗？」**
+**我已经有一堆散的简历了，能直接用这个整起来吗？**
 
-能。把 Agent 指向你现有的 `简历/` 目录（或其它路径），说"把这些迁移到 resume-intelligence-hub 结构里"——bootstrap 流程会做合并整理。
+可以。把 AI 指到那些简历所在的目录，让它"把这些整合进 resume-intelligence-hub 的结构"就行。初始化流程会帮你合并。
 
-**「我需要其它语言」**
+**我想用别的语言（日文、韩文……）**
 
-目前支持中文和英文模板。欢迎 [GitHub PR](https://github.com/Zenine/resume-intelligence-hub) 贡献其它语言。
+目前只有中英文模板，其它语言欢迎去 [GitHub](https://github.com/Zenine/resume-intelligence-hub) 提 PR。
