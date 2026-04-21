@@ -42,10 +42,11 @@ git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/res
 
 ## 3. ハブの使用
 
-初期化後、エージェントが 5 つのワークフローを処理する。自然言語で呼び出す：
+初期化後、エージェントが 6 つのワークフローを処理する。自然言語で呼び出す：
 
 | 言い方 | ワークフロー |
 |--------|-------------|
+| 盘一下我跟目标座位的差距 / Diff my gap against the target seat | [キャリアプランニング & ギャップ分析](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — 初期化直後に最初に実行し、その後は四半期ごとに再実行 |
 | 帮我针对这个 JD 生成简历 / Tailor my resume to this JD | [JD カスタム履歴書](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
 | 看看有什么合适的机会 / What's out there for me | [アクティブ JD ソーシング](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
 | 针对这个职位帮我准备面试 / Prep me for this interview | [面接準備](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |

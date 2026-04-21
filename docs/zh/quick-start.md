@@ -46,6 +46,7 @@ Hub 搭好之后，直接用中文和 AI 说想做什么就行：
 
 | 你说 | 触发的工作流 |
 |------|--------------|
+| 盘一下我跟目标座位的差距 | [职业规划 & 差距盘点](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — 初始化后第一个跑，之后每季度再跑一次 |
 | 帮我针对这个 JD 生成简历 | [JD 定制简历](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
 | 看看有什么合适的机会 | [主动搜岗位](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
 | 针对这个职位帮我准备面试 | [面试准备](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |
