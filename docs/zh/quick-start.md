@@ -1,3 +1,11 @@
+<!--
+  Translation status:
+  Source file : docs/quick-start.md
+  Source commit: f5f491c
+  Translated  : 2026-04-21
+  Status      : up-to-date
+-->
+
 # 快速开始
 
 三步把你的职业 hub 跑起来。

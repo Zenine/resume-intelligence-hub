@@ -1,3 +1,11 @@
+<!--
+  Translation status:
+  Source file : docs/philosophy.md
+  Source commit: f5f491c
+  Translated  : 2026-04-21
+  Status      : up-to-date
+-->
+
 # 设计哲学
 
 十条不太直觉的选择——不是随便定的，每条都踩过坑才想明白。自己扩展 skill 时，别轻易动这些。

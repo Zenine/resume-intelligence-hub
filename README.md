@@ -1,3 +1,5 @@
+> **Language**: **English** · [简体中文](README.zh.md) · [日本語](README.ja.md) · [繁體中文](README.zh-TW.md)
+
 # resume-intelligence-hub
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

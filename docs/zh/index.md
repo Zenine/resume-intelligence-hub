@@ -60,6 +60,14 @@ features:
     details: Google XYZ 公式、STAR、BEI、Heilmeier 9 问、stretch target、三角验证——每一条都点出出处，方便你想深入时自己顺藤摸瓜。
 ---
 
+<!--
+  Translation status:
+  Source file : docs/index.md
+  Source commit: f5f491c
+  Translated  : 2026-04-21
+  Status      : up-to-date
+-->
+
 <div class="vp-doc" style="max-width: 960px; margin: 48px auto 96px; padding: 0 24px;">
 
 ## 安装

@@ -1,0 +1,146 @@
+<!--
+  Translation status:
+  Source file : README.md
+  Source commit: f5f491c
+  Translated  : 2026-04-21
+  Status      : up-to-date
+-->
+
+> **Language**: [English](README.md) · [简体中文](README.zh.md) · **日本語** · [繁體中文](README.zh-TW.md)
+
+# resume-intelligence-hub
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/Docs-online-6366f1?style=flat&logo=vitepress&logoColor=white)](https://zenine.github.io/resume-intelligence-hub/)
+[![Skills.sh](https://img.shields.io/badge/skills.sh-listed-f59e0b?style=flat)](https://skills.sh/Zenine/resume-intelligence-hub)
+
+> **[📖 ドキュメント & ランディングページ →](https://zenine.github.io/resume-intelligence-hub/)**
+
+> 意見を持った AI エージェント **skill**。個人のキャリアインテリジェンスハブ（プライベート Git リポジトリ）を初期化し、履歴書・面接準備・研究課題申請・応募前検証を単一の信頼できる情報源として管理する。`AGENTS.md` を読める任意の AI IDE で動作（Claude Code、Cursor、Codex、Cline、Windsurf、GitHub Copilot…）。
+
+エコシステム上の多くのキャリア系 skill は単発ジェネレータ（「JD を貼って履歴書を得る」）だが、本 skill は違う。**フレームワーク**として、永続的でバージョン管理されたハブを先に構築し、その上で継続的な求職活動、面接準備、研究課題申請、ファクトチェックを駆動する。
+
+## 誰向けか
+
+- 散らばった履歴書・CV を単一の信頼できる情報源に統合したい人
+- シニア層（ディレクター / VP / CTO / パートナー / PI）で、応募頻度は低いが 1 回 1 回が重要な人
+- 二言語（中国語 / 英語）で求職する人（どちらのハブもサポート、初期化時に選択）
+- 研究者で求職もする人（オプションの双軌：求職 + 研究課題申請）
+- 友人や家族に同じ仕組みを設定してあげたい人
+
+**業界非依存**——ソフトウェア、医療、金融、法律、デザイン、学術、営業、製造など何でも対応。フレームワーク自体は業界非依存で、具体的な語彙は初期化時の Q&A でカスタマイズ。
+
+## 提供されるもの
+
+### 1. 次の構造を持つプライベート Git リポジトリ
+```
+.
+├── profiles/              # 単一の信頼できる情報源
+│   ├── master.md          # 求人向け履歴書のソース
+│   ├── research.md        # 研究課題申請のソース（オプション）
+│   ├── skills.md          # 能力マトリクス
+│   └── stories.md         # STAR ストーリーライブラリ
+├── jobs/
+│   ├── templates/
+│   ├── market-watch/      # ターゲット企業 + 採用シグナル
+│   └── applications/{company}-{role}-{YYYY-MM-DD}/
+├── verification/          # 応募前ファクトチェック
+│   ├── credentials/       # 非機密の原本
+│   ├── references.md      # パス参照インデックス（機密原本はローカル保管）
+│   └── {date}-web-check.md
+├── assessments/           # 性格診断、360 度フィードバック
+├── resumes-archive/
+├── research-archive/      # （オプション）
+├── todo.md / changelog.md
+└── AGENTS.md              # AI エージェント行動ガイド
+```
+
+### 2. エージェントがハブ上で実行する 5 つのワークフロー
+- **JD ソーシング** — 良い求人票を見つける（ストレッチターゲットに基づくアクティブ検索、または手元の JD の選別）
+- **JD カスタム履歴書** — profiles/master.md から特定の JD に対するカスタム履歴書を生成
+- **面接準備** — 質問予測、STAR 回答準備、技術復習、行動面接戦略
+- **応募前検証** — すべての重要な主張を公開情報源と照合
+- **研究課題申請** — NSFC / NIH / 省級 / 業界フォーマットで研究提案を生成（オプション）
+
+### 3. 参照フレームワーク
+Skill は定着したキャリアフレームワークを名前で引用し、利用者が自ら深掘りできる語彙を提供：
+- **Google XYZ formula**（Laszlo Bock）— 履歴書の要点構造
+- **STAR** — 行動面接回答
+- **BEI**（McClelland）— 行動面接の方法論
+- **Heilmeier Catechism**（DARPA）— 研究提案の構成
+- **T-shaped / π-shaped skills** — ポジショニング
+- **Career capital**（Cal Newport）— ギャップ分析
+- **Stretch target heuristic**（1-2 レベル上、1.2-3 倍報酬、70% マッチ）— 応募ターゲティング
+- **Triangulation** — デューデリジェンス / 検証
+
+## インストール
+
+Skills CLI 経由（推奨、skills.sh に公開後）：
+```bash
+npx skills add <owner>/resume-intelligence-hub -g -y
+```
+
+または手動で clone + シンボリックリンク：
+```bash
+git clone https://github.com/<owner>/resume-intelligence-hub ~/.claude/skills/resume-intelligence-hub
+```
+
+## 使い方
+
+お使いの AI IDE で次のいずれかを言えばよい：
+- "帮我搭个简历库" / "build my career repo" — 新規ハブの初期化
+- "帮我针对这个 JD 生成简历" / "tailor my resume for this JD" — カスタム履歴書生成
+- "看看有什么合适的机会" / "what's out there for me" — アクティブ JD ソーシングモード
+- "针对这个职位帮我准备面试" / "prep me for this interview" — 面接コーチング
+- "投递前帮我核查一下公开资料" / "run a pre-submission verification" — ファクトチェック
+- "帮我生成国自然基金简历" / "generate an NIH application profile" — 研究課題申請（リサーチトラック有効時）
+
+Skill の `SKILL.md` ファイルが初期化フロー全体をエージェントに指示する：7 問インタビュー（言語、既存資料、業界、シニアリティ、リサーチトラック有無、履歴書出力言語、リポジトリ場所）、その後スキャフォールド、最後に「次のステップ」パンチリストを書き出す。
+
+## デザイン哲学（非自明な選択）
+
+1. **単一の信頼できる情報源**は `profiles/`；アーカイブは読み取り専用
+2. **ポジショニングロック**は `AGENTS.md` の先頭——ターゲットを一度変更すれば、以降すべての履歴書がそれに偏る
+3. **双軌分離**（有効時）——求職プロファイルと研究プロファイルは別
+4. **機密原本はパス参照**——リポジトリは共有可能なまま、原本はローカルに保管
+5. **高ステークス応募前に公開情報源クロスチェック**
+6. **todo.md / changelog.md の分離**——todo は未完了のみ、完了項目は changelog へ移行
+7. **応募ごとに日付付きフォルダ**——同じ会社に 2 回 = 2 つのフォルダ
+8. **STAR ストーリーは事実と別管理**——磨いた語り vs. 生データ
+9. **単一言語ハブ**——初期化時に中国語 / 英語のどちらかを選択、混在不可
+10. **AI IDE 非依存**——`AGENTS.md` クロス IDE 規約を採用
+
+## エコシステムの補完スキル
+
+これはフレームワーク。特定の単発タスクには次を重ねて使う：
+
+| Skill | 用途 |
+|-------|------|
+| [`paramchoudhary/resumeskills@resume-ats-optimizer`](https://skills.sh/paramchoudhary/resumeskills/resume-ats-optimizer) | ATS 深層最適化 |
+| [`paramchoudhary/resumeskills@linkedin-profile-optimizer`](https://skills.sh/paramchoudhary/resumeskills/linkedin-profile-optimizer) | LinkedIn プロファイル |
+| [`composiohq/awesome-claude-skills@tailored-resume-generator`](https://skills.sh/composiohq/awesome-claude-skills/tailored-resume-generator) | 別の JD カスタムジェネレータ |
+| [`anthropics/knowledge-work-plugins@interview-prep`](https://skills.sh/anthropics/knowledge-work-plugins/interview-prep) | Anthropic 公式面接準備 |
+| [`refoundai/lenny-skills@career-transitions`](https://skills.sh/refoundai/lenny-skills/career-transitions) | Lenny のキャリア転換 |
+| [`aradotso/trending-skills@awesome-phd-cv`](https://skills.sh/aradotso/trending-skills/awesome-phd-cv) | 博士 CV（リサーチトラック） |
+
+## プライバシー
+
+本 skill には**個人データは含まれない**。すべてのテンプレートは「to be filled」マーカー付きのプレースホルダーフリー散文で、AI が各ユーザーとの対話を通じて埋めていく。`templates/{cn,en}/profiles/stories.md` 内の STAR ストーリー例はすべて汎用的な架空シナリオで、匿名化フォーマット参照として明確にラベル付けされている。
+
+ハブ自体は一度入力すると実際の個人データを含む——設計上、**プライベート** Git リポジトリに置くことを前提としており、公開されるべきではない。
+
+## License
+
+MIT。[LICENSE](LICENSE) 参照。
+
+## コントリビューション
+
+PR 歓迎——特に次の方向：
+- 追加の言語サポート（現在：中国語 + 英語）
+- テンプレート内の業界特化語彙の拡充
+- 新ワークフロー（例：給与交渉、報酬ベンチマーキング、ネットワーキングプレイブック）
+- 地域的 JD ソーシングチャネル（現カバレッジ：中国、米国、英国、EU、グローバルテック；ギャップ：東南アジア、インド、日本、韓国、ラテンアメリカ）
+
+## 引用
+
+本 skill で参照されているフレームワークはそれぞれの著者の成果：Laszlo Bock（Google）、David McClelland（BEI）、George Heilmeier（DARPA）、Cal Newport（*So Good They Can't Ignore You*）。Skill はそれらを引用・適用するのみ——深く理解したい場合は原著を参照されたい。

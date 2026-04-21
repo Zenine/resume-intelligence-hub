@@ -1,3 +1,11 @@
+<!--
+  Translation status:
+  Source file : docs/frameworks.md
+  Source commit: f5f491c
+  Translated  : 2026-04-21
+  Status      : up-to-date
+-->
+
 # 引用的方法论
 
 Skill 里的工作流都建在成熟方法论之上。AI 指导你时会**点出名字**——既给你一个搜索关键词往下深挖，也让这些方法看起来不是 AI 瞎编的。
