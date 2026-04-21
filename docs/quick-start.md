@@ -34,10 +34,11 @@ Then the agent scaffolds the directory, seeds `AGENTS.md` with your positioning,
 
 ## 3. Use the hub
 
-Once bootstrapped, the agent handles five workflows. Invoke with natural language:
+Once bootstrapped, the agent handles six workflows. Invoke with natural language:
 
 | Say this | Workflow |
 |----------|----------|
+| 盘一下我跟目标座位的差距 / Diff my gap against the target seat | [Career planning & gap analysis](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/career-planning.md) — run this first, then re-run each quarter |
 | 帮我针对这个 JD 生成简历 / Tailor my resume to this JD | [JD-tailored resume](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-tailored-resume.md) |
 | 看看有什么合适的机会 / What's out there for me | [Active JD sourcing](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/jd-sourcing.md) |
 | 针对这个职位帮我准备面试 / Prep me for this interview | [Interview prep](https://github.com/Zenine/resume-intelligence-hub/blob/main/workflows/interview-prep.md) |

@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : docs/frameworks.md
-  Source commit: f5f491c
+  Source commit: bfc4697
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -72,7 +72,7 @@ Cal Newport 在《優秀到不能被忽視》裡提出的概念——**稀有且
 
 ## 求職策略
 
-### 延伸目標啟發式（1-2 級，1.5-3 倍薪，70% 匹配）
+### 延伸目標啟發式（1-2 級，1.2-3 倍薪，70% 匹配）
 
 換工作時用的標準啟發式：
 

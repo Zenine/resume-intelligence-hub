@@ -8,13 +8,14 @@
 
 > **[📖 Documentation & landing page →](https://zenine.github.io/resume-intelligence-hub/)**
 
-> An opinionated AI-agent **skill** that bootstraps a personal career intelligence hub — a private Git repo that acts as the single source of truth for resumes, interview prep, grant applications, and pre-submission verification. Works in any AI IDE that reads `AGENTS.md` (Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot, ...).
+> An opinionated AI-agent **skill** that bootstraps a personal career intelligence hub — a private Git repo that is **both (a) your single source of truth** (resumes, interview prep, grant applications, pre-submission verification) **and (b) your career compass** — the seat you want 1–2 levels up, the explicit gap between you and that seat, and what to close this quarter. Works in any AI IDE that reads `AGENTS.md` (Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot, ...).
 
-Unlike most career skills in the ecosystem — which are one-shot generators ("paste a JD, get a resume") — this one is a **framework**. It scaffolds a persistent, version-controlled hub and then powers ongoing job search, interview prep, grant applications, and fact-checking on top of that hub.
+Unlike most career skills in the ecosystem — which are one-shot generators ("paste a JD, get a resume") — this one is a **framework**. It scaffolds a persistent, version-controlled hub and then powers ongoing job search, interview prep, grant applications, and fact-checking on top of it. **Output is only half the value — the other half is direction**: the hub forces you to name a stretch target, surface the capability gap (skills, title, scope, comp), and revisit it every time you apply, so your applications compound toward a destination instead of drifting.
 
 ## Who is this for?
 
 - Anyone consolidating scattered resumes/CVs into a single source of truth
+- Anyone aiming to jump **1–2 levels up** but hasn't yet laid out the capability gap between their current seat and the target seat, or doesn't yet know which target seat to aim for
 - Senior professionals (director / VP / CTO / partner / PI) who apply infrequently but each submission is high-stakes
 - Bilingual job searchers (Chinese / English hubs both supported, pick one at bootstrap)
 - Researchers who also job-hunt (optional dual track: recruitment + grant applications)
@@ -47,7 +48,8 @@ Works for any industry — software, healthcare, finance, law, design, academia,
 └── AGENTS.md              # AI agent behavior guide
 ```
 
-### 2. Five workflows the agent executes on the hub
+### 2. Six workflows the agent executes on the hub
+- **Career planning & gap analysis** — name a stretch target 1-2 levels up, diff the capability gap (skill / scope / credential / network), turn it into a quarterly SMART plan. Run first after bootstrap, re-run every ~quarter.
 - **JD sourcing** — find good JDs (active web search by stretch target, or triage a JD you have)
 - **JD-tailored resume** — generate a custom resume from `profiles/master.md` against a specific JD
 - **Interview prep** — predict questions, prep STAR answers, tech review, behavioral strategy
@@ -61,31 +63,32 @@ The skill cites established career frameworks by name so users have vocabulary t
 - **BEI** (McClelland) — behavioral interviewing methodology
 - **Heilmeier Catechism** (DARPA) — research proposal framing
 - **T-shaped / π-shaped skills** — positioning
-- **Career capital** (Cal Newport) — gap analysis
+- **Career capital** (Cal Newport) — career capital + gap analysis against the target seat
 - **Stretch target heuristic** (1-2 levels up, 1.2-3x comp, 70% match) — application targeting
 - **Triangulation** — due diligence / verification
 
 ## Install
 
-Via the Skills CLI (recommended once published to skills.sh):
+Via the Skills CLI (recommended):
 ```bash
-npx skills add <owner>/resume-intelligence-hub -g -y
+npx skills add Zenine/resume-intelligence-hub -g -y
 ```
 
-Or clone + symlink manually:
+Or clone manually into your IDE's skills directory (Claude Code path shown — adjust for Cursor / Codex / Cline / Windsurf):
 ```bash
-git clone https://github.com/<owner>/resume-intelligence-hub ~/.claude/skills/resume-intelligence-hub
+git clone https://github.com/Zenine/resume-intelligence-hub ~/.claude/skills/resume-intelligence-hub
 ```
 
 ## Use
 
 In your AI IDE, say any of:
-- "帮我搭个简历库" / "build my career repo" — bootstrap a new hub
-- "帮我针对这个 JD 生成简历" / "tailor my resume for this JD" — generate custom resume
-- "看看有什么合适的机会" / "what's out there for me" — active JD sourcing mode
-- "针对这个职位帮我准备面试" / "prep me for this interview" — interview coaching
-- "投递前帮我核查一下公开资料" / "run a pre-submission verification" — fact-check
-- "帮我生成国自然基金简历" / "generate an NIH application profile" — grant application (if research track enabled)
+- "把散落在几个文件夹的简历合并成一个库" / "I've got 5 resumes across different folders — consolidate them into one hub" — **bootstrap**
+- "想从 Senior 跳 Staff，盘一下我跟那把椅子的差距，排个这季度的计划" / "I want to jump Senior→Staff — diff the gap and give me a plan for this quarter" — **career planning & gap analysis**
+- "朋友发了个 Staff PM 的 JD，值得投吗？值得就顺手定制一版简历" / "A friend sent me this Staff PM JD — triage it, and if it's worth applying, tailor my resume against it" — **JD triage + tailored resume**
+- "想从 Senior 跳 Staff，扫一下最近两周市面上合适的 stretch 机会" / "I'm aiming Senior→Staff — surface stretch-target roles posted in the last two weeks" — **active JD sourcing**
+- "周四有个现场面，对着这份 JD 帮我预测题目并排练一遍" / "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers" — **interview prep**
+- "投出去前，把简历里的数字跟我 GitHub、论文、LinkedIn 对一遍，别有出入" / "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn" — **pre-submission verification**
+- "帮我生成国自然青基的申报简历" / "Draft an NSFC / NIH grant application profile" — **grant application** (if research track enabled)
 
 The skill's `SKILL.md` file instructs the agent on the full bootstrap flow: 7-question interview (language, existing materials, industry, seniority, research track yes/no, resume output language, repo location), then scaffold, then next-steps punch list.
 

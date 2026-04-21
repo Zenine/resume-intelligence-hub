@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : docs/frameworks.md
-  Source commit: f5f491c
+  Source commit: bfc4697
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -72,7 +72,7 @@ Cal Newport 在《优秀到不能被忽视》里提出的概念——**稀有且
 
 ## 求职策略
 
-### 拉伸目标启发式（1-2 级，1.5-3 倍薪，70% 匹配）
+### 拉伸目标启发式（1-2 级，1.2-3 倍薪，70% 匹配）
 
 换工作时用的标准启发式：
 

@@ -2,7 +2,7 @@
 
 > Before the user can apply to a JD, they need to find one. Most job-search failures aren't about resume quality — they're about pipeline quality.
 
-## Stretch target heuristic (the "1-2 levels, 1.5-3x" rule)
+## Stretch target heuristic (the "1-2 levels, 1.2-3x" rule)
 
 A widely-used recruiter heuristic for external moves:
 
@@ -97,7 +97,10 @@ When the user brings a JD (pasted text / URL / PDF), skip straight to step 1 bel
 ## Steps
 
 ### 1. Confirm stretch target
-Before searching, confirm with the user:
+
+**First, check `AGENTS.md` positioning section.** If a stretch target is already locked there (from a prior `workflows/career-planning.md` run), read it and proceed to Step 2 — don't re-litigate. If the positioning section is empty, vague, or materially stale (>1 quarter old, or the user's situation obviously shifted), **stop and run `workflows/career-planning.md` first**. A gap-analyzed target beats an inline-rescued one; don't try to do career planning as a sidebar to JD sourcing.
+
+If a quick calibration is all that's needed (target exists, just verify numbers), confirm with the user:
 - Current title + total comp range
 - Stretch target title (1-2 levels up per the heuristic, with caveats)
 - Stretch target comp (1.2-1.5x floor, up to 2-3x if also changing company type)

@@ -1,7 +1,7 @@
 <!--
   Translation status:
   Source file : docs/frameworks.md
-  Source commit: f5f491c
+  Source commit: bfc4697
   Translated  : 2026-04-21
   Status      : up-to-date
 -->
@@ -59,7 +59,7 @@
 
 ## 求職戦略
 
-**Stretch target heuristic**（"1-2 レベル上、1.5-3 倍報酬、70% マッチ"）
+**Stretch target heuristic**（"1-2 レベル上、1.2-3 倍報酬、70% マッチ"）
 
 外部転職の広く使われるリクルーター的ヒューリスティック：
 
