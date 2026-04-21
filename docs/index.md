@@ -17,27 +17,45 @@ hero:
       link: https://github.com/Zenine/resume-intelligence-hub
 
 features:
-  - icon: 🧭
+  - icon:
+      src: /icons/compass.svg
+      width: 48
+      height: 48
     title: Single source of truth
     details: profiles/ is the authoritative data layer. Every generated resume, cover letter, and grant proposal is derived — never hand-edited.
 
-  - icon: 🎯
+  - icon:
+      src: /icons/target.svg
+      width: 48
+      height: 48
     title: Positioning lock
     details: Set target role level and industry once at the top of AGENTS.md. Every subsequent artifact biases to it — no reprompting.
 
-  - icon: 🔀
+  - icon:
+      src: /icons/fork.svg
+      width: 48
+      height: 48
     title: Dual-track support
     details: Job applications and research / grant proposals have different data sources and formats. Keep them separate — toggle the research track at bootstrap.
 
-  - icon: 🛡️
+  - icon:
+      src: /icons/shield.svg
+      width: 48
+      height: 48
     title: Pre-submission verification
     details: Before senior-role interviews or grant submissions, run a public-source cross-check on every load-bearing claim. Evidence before assertions.
 
-  - icon: 🌐
+  - icon:
+      src: /icons/globe.svg
+      width: 48
+      height: 48
     title: Cross-IDE via AGENTS.md
     details: Works with Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot. Symlink once, use anywhere.
 
-  - icon: 📚
+  - icon:
+      src: /icons/book.svg
+      width: 48
+      height: 48
     title: Backed by proven frameworks
     details: Google XYZ formula, STAR, BEI, Heilmeier Catechism, stretch-target heuristic, triangulation — named so you can research further.
 ---
