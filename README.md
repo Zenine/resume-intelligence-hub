@@ -4,10 +4,6 @@
 [![Docs](https://img.shields.io/badge/Docs-online-6366f1?style=flat&logo=vitepress&logoColor=white)](https://zenine.github.io/resume-intelligence-hub-site/)
 [![Skills.sh](https://img.shields.io/badge/skills.sh-listed-f59e0b?style=flat)](https://skills.sh/Zenine/resume-intelligence-hub)
 
-<div align="center">
-  <img src=".github/assets/hero-career-hub.png" alt="Resume Intelligence Hub" width="720" />
-</div>
-
 > **[📖 Documentation & landing page →](https://zenine.github.io/resume-intelligence-hub-site/)** (available in English · 简体中文 · 日本語 · 繁體中文)
 
 > An opinionated AI-agent **skill** that bootstraps a personal career intelligence hub — a private Git repo that is **both (a) your single source of truth** (resumes, interview prep, grant applications, credential dossiers, pre-submission verification) **and (b) your career compass** — the seat you want 1–2 levels up, the explicit gap between you and that seat, and what to close this quarter. Works in any AI IDE that reads `AGENTS.md` (Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot, ...).
