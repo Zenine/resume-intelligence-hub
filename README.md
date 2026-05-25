@@ -4,9 +4,13 @@
 [![Docs](https://img.shields.io/badge/Docs-online-6366f1?style=flat&logo=vitepress&logoColor=white)](https://zenine.github.io/resume-intelligence-hub-site/)
 [![Skills.sh](https://img.shields.io/badge/skills.sh-listed-f59e0b?style=flat)](https://skills.sh/Zenine/resume-intelligence-hub)
 
+<div align="center">
+  <img src=".github/assets/hero-career-hub.png" alt="Resume Intelligence Hub" width="720" />
+</div>
+
 > **[📖 Documentation & landing page →](https://zenine.github.io/resume-intelligence-hub-site/)** (available in English · 简体中文 · 日本語 · 繁體中文)
 
-> An opinionated AI-agent **skill** that bootstraps a personal career intelligence hub — a private Git repo that is **both (a) your single source of truth** (resumes, interview prep, grant applications, pre-submission verification) **and (b) your career compass** — the seat you want 1–2 levels up, the explicit gap between you and that seat, and what to close this quarter. Works in any AI IDE that reads `AGENTS.md` (Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot, ...).
+> An opinionated AI-agent **skill** that bootstraps a personal career intelligence hub — a private Git repo that is **both (a) your single source of truth** (resumes, interview prep, grant applications, credential dossiers, pre-submission verification) **and (b) your career compass** — the seat you want 1–2 levels up, the explicit gap between you and that seat, and what to close this quarter. Works in any AI IDE that reads `AGENTS.md` (Claude Code, Cursor, Codex, Cline, Windsurf, GitHub Copilot, ...).
 
 Unlike most career skills in the ecosystem — which are one-shot generators ("paste a JD, get a resume") — this one is a **framework**. It scaffolds a persistent, version-controlled hub and then powers ongoing job search, interview prep, grant applications, and fact-checking on top of it. **Output is only half the value — the other half is direction**: the hub forces you to name a stretch target, surface the capability gap (skills, title, scope, comp), and revisit it every time you apply, so your applications compound toward a destination instead of drifting.
 
@@ -57,6 +61,8 @@ Works for any industry — software, healthcare, finance, law, design, academia,
 - **Grant application** — generate research proposals in NSFC / NIH / provincial / industry formats (optional)
 - **Credential / promotion dossier** — build an eligibility map, evidence matrix, and safe wording for professional titles, licenses, board certifications, or internal promotion packets (optional)
 
+![Resume Intelligence Hub architecture and workflow](docs/assets/architecture-workflow.png)
+
 ### 3. Referenced frameworks
 The skill cites established career frameworks by name so users have vocabulary to research further:
 - **Google's XYZ formula** (Laszlo Bock) — resume bullet structure
@@ -90,6 +96,7 @@ In your AI IDE, say any of:
 - "Onsite this Thursday — predict likely questions from this JD and drill me on STAR answers" — **interview prep**
 - "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn" — **pre-submission verification**
 - "Draft an NSFC / NIH grant application profile" — **grant application** (if research track enabled)
+- "Help me prepare a credential or promotion dossier" — **credential / promotion dossier** (if enabled)
 
 The skill's `SKILL.md` file instructs the agent on the full bootstrap flow: 8-question interview (language, existing materials, industry, seniority, research track yes/no, credential/promotion track yes/no, resume output language, repo location), then scaffold, then next-steps punch list.
 
@@ -97,7 +104,7 @@ The skill's `SKILL.md` file instructs the agent on the full bootstrap flow: 8-qu
 
 1. **Single source of truth** in `profiles/`; archives are read-only
 2. **Positioning lock** in `AGENTS.md` top — change target once, every resume biases to it
-3. **Dual-track separation** when enabled — recruitment profile and research profile are distinct
+3. **Multi-track separation** when enabled — recruitment, research, and credential dossiers stay distinct
 4. **Path-references for sensitive originals** — repo stays shareable, originals stay local
 5. **Pre-submission public-source cross-check** for high-stakes submissions
 6. **todo.md / changelog.md split** — todo is pending-only, completed items migrate
