@@ -17,6 +17,7 @@ Unlike most career skills in the ecosystem — which are one-shot generators ("p
 - Senior professionals (director / VP / CTO / partner / PI) who apply infrequently but each submission is high-stakes
 - Bilingual job searchers (Chinese / English hubs both supported, pick one at bootstrap)
 - Researchers who also job-hunt (optional dual track: recruitment + grant applications)
+- Professionals preparing evidence-heavy credential, licensing, professional-title, or promotion dossiers
 - Anyone helping a friend or family member set up the same system
 
 Works for any industry — software, healthcare, finance, law, design, academia, sales, manufacturing, etc. The framework is industry-agnostic; vocabulary customizes via bootstrap Q&A.
@@ -40,19 +41,21 @@ Works for any industry — software, healthcare, finance, law, design, academia,
 │   ├── references.md      # Path-reference index (sensitive originals stay local)
 │   └── {date}-web-check.md
 ├── assessments/           # Personality tests, 360 feedback
+├── credential-applications/ # Optional: title/license/promotion dossiers
 ├── resumes-archive/
 ├── research-archive/      # (optional)
 ├── todo.md / changelog.md
 └── AGENTS.md              # AI agent behavior guide
 ```
 
-### 2. Six workflows the agent executes on the hub
+### 2. Seven workflows the agent executes on the hub
 - **Career planning & gap analysis** — name a stretch target 1-2 levels up, diff the capability gap (skill / scope / credential / network), turn it into a quarterly SMART plan. Run first after bootstrap, re-run every ~quarter.
 - **JD sourcing** — find good JDs (active web search by stretch target, or triage a JD you have)
 - **JD-tailored resume** — generate a custom resume from `profiles/master.md` against a specific JD
 - **Interview prep** — predict questions, prep STAR answers, tech review, behavioral strategy
 - **Pre-submission verification** — cross-check every load-bearing claim against public sources
 - **Grant application** — generate research proposals in NSFC / NIH / provincial / industry formats (optional)
+- **Credential / promotion dossier** — build an eligibility map, evidence matrix, and safe wording for professional titles, licenses, board certifications, or internal promotion packets (optional)
 
 ### 3. Referenced frameworks
 The skill cites established career frameworks by name so users have vocabulary to research further:
@@ -88,7 +91,7 @@ In your AI IDE, say any of:
 - "Before I hit submit, cross-check every load-bearing claim in my resume against my GitHub, papers, and LinkedIn" — **pre-submission verification**
 - "Draft an NSFC / NIH grant application profile" — **grant application** (if research track enabled)
 
-The skill's `SKILL.md` file instructs the agent on the full bootstrap flow: 7-question interview (language, existing materials, industry, seniority, research track yes/no, resume output language, repo location), then scaffold, then next-steps punch list.
+The skill's `SKILL.md` file instructs the agent on the full bootstrap flow: 8-question interview (language, existing materials, industry, seniority, research track yes/no, credential/promotion track yes/no, resume output language, repo location), then scaffold, then next-steps punch list.
 
 ## Design philosophy (the non-obvious choices)
 
@@ -102,6 +105,7 @@ The skill's `SKILL.md` file instructs the agent on the full bootstrap flow: 7-qu
 8. **STAR stories separate from facts** — crafted retelling vs. raw data
 9. **Monolingual output** — pick one of Chinese / English at bootstrap, don't mix
 10. **AI-IDE agnostic** — uses `AGENTS.md` cross-IDE convention
+11. **Attribution boundary** — personal ownership, team outcomes, and company outcomes are labeled separately; forecasts and pipeline are not treated as revenue
 
 ## Complementary skills in the ecosystem
 

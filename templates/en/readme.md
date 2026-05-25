@@ -45,6 +45,15 @@ Targeting (fill at bootstrap — target seniority) roles in (industry / domain).
 - **Supporting-materials index** — path references to local, cloud-synced, and public-URL evidence (sensitive originals stay out of Git)
 - **Public-source cross-check** — verify load-bearing claims before high-stakes submissions
 
+<!-- Credential / promotion dossier track enabled -->
+
+### Credential / promotion dossiers
+- **Rulebook decomposition** — turn eligibility, exceptional-track, and signature-achievement requirements into an evidence matrix
+- **Missing-evidence management** — track appointment letters, reviews, continuing education, ownership proof, contracts/acceptance/revenue/users, standards/patents/awards
+- **Risk-safe wording** — rewrite claims that cannot yet be publicly verified or supported by documents
+
+<!-- End -->
+
 ## Directory structure
 
 ```
@@ -70,6 +79,7 @@ Targeting (fill at bootstrap — target seniority) roles in (industry / domain).
 │   ├── references.md      # Supporting-materials index (path references)
 │   └── {date}-web-check.md # Public-source verification logs
 ├── assessments/           # Personality tests, 360 feedback, etc. (optional, for interview prep)
+├── credential-applications/ # Optional: title/license/certification/promotion dossiers
 ├── todo.md                # Current pending work
 ├── changelog.md           # Archive of completed items
 ├── AGENTS.md              # AI agent behavior guide (cross-IDE)

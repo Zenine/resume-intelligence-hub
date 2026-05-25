@@ -47,7 +47,7 @@ Apply the **stretch target heuristic** from `workflows/jd-sourcing.md`:
 
 **Critical**: don't accept a target stated in the abstract ("I want to be a VP"). Force concreteness on four axes:
 
-- **Title** — exact title, not a category ("VP Engineering at a Series B-C healthcare AI startup", not "senior tech leadership")
+- **Title** — exact title, not a category ("VP Engineering at a Series B-C domain-specific startup", not "senior tech leadership")
 - **Company stage / type** — enterprise vs. startup, YC-stage vs. growth-stage, domestic vs. international, etc.
 - **Scope** — headcount owned, budget, geography, product surface
 - **Horizon** — realistic arrival window: 6-12 mo / 12-24 mo / 24-36 mo?

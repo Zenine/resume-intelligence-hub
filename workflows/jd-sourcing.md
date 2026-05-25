@@ -76,7 +76,7 @@ Steps:
 1. Read `profiles/master.md` + `profiles/skills.md` + positioning section of `AGENTS.md` to build an internal profile
 2. Confirm / recalibrate stretch target with user (see Step 1 below)
 3. **Actively search** using available web tools (WebSearch / web fetch / your IDE's equivalent) across 3-5 most-fit channels for the user's region × seniority × field. Construct queries that reflect stretch target, not current title:
-   - Include target title(s) 1-2 levels up (e.g., if user is 研发总监, search "CTO 医疗 AI" / "VP Engineering healthcare AI" / "技术副总裁 医疗大数据")
+   - Include target title(s) 1-2 levels up and the user's domain (e.g., if a user is an engineering manager in fintech, search "VP Engineering fintech" / "Head of Engineering payments" / "CTO risk platform")
    - Include geography constraint (city or remote preference)
    - Filter company stage / size matching stretch comp target
 4. **Present top 3-5 candidates** as a ranked shortlist. For each, surface:

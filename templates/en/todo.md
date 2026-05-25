@@ -22,6 +22,8 @@
 
 - Add the past 5-10 years of experience (reverse chronological) → `profiles/master.md`
 - For each role: title, scope, key outcomes, quantified results
+- For senior / management roles, clarify personal ownership boundaries: personal lead vs. team outcome vs. company metric
+- Separate actual signed revenue / cash collected / margin from price quotes, pipeline, and forecasts
 
 ## 3. Projects & outcomes
 
@@ -41,3 +43,9 @@
 
 - Archive key supporting document paths → `verification/references.md`
 - Run a `verification/{date}-web-check.md` pass before each major submission
+
+## 7. Credential / promotion dossiers (if enabled)
+
+- Collect the official rulebook or evaluation criteria
+- Build a requirement -> evidence -> gap -> wording-risk matrix
+- Archive completed evidence collection in `changelog.md`; keep only gaps in todo

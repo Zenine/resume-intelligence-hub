@@ -44,6 +44,11 @@ Before any task, read these for context:
 - `resumes-archive/` — historical resumes (read-only, not a data source)
 - `verification/` — supporting materials and public-source fact-checking
 - `assessments/` — personality tests, 360 feedback, etc. (optional, for interview strategy)
+- `todo.md` — current pending work only
+- `changelog.md` — completed work archive, reverse-chronological
+<!-- Credential / promotion dossier track enabled: add -->
+- `credential-applications/` — professional-title, licensing, certification, or promotion dossiers (rules, gap assessment, action plan, evidence matrix)
+<!-- End -->
 
 ## Workflows
 
@@ -92,11 +97,22 @@ Required before high-stakes submissions:
 - Produce `verification/{date}-web-check.md` tagging ✅ confirmed / 🟡 needs supporting docs / 🔴 high risk
 - For high-risk items: either find supporting evidence or rewrite to safer phrasing
 
+### 6. Credential / promotion dossier support (if enabled)
+
+When the user works on a professional title, license, board certification, internal promotion, or exceptional-track application:
+
+1. Read the rulebook, eligibility assessment, and action plan for that path first
+2. Separate normal eligibility, exceptional eligibility, and signature-achievement paths
+3. Build an evidence matrix: requirement -> existing evidence -> missing evidence -> wording risk
+4. Prioritize appointment letters, annual reviews, continuing education, project/product ownership proof, contracts/acceptance/revenue/users, standards/patents/awards, and third-party validation
+5. External materials must be grounded in real experience and obtainable proof; unverifiable content stays marked as pending or is rewritten safely
+
 ## Output principles
 
 - Resume body in **English**; technical terms in original form when appropriate
 - Match output language to target employer
 - All content grounded in real experience — no fabrication
+- Separate personal ownership, team outcomes, and company-wide metrics; never treat quotes, pipeline, forecasts, or group metrics as personal revenue/P&L without evidence
 - **One-number rule — every resume bullet must contain at least one quantified element** (Google's XYZ formula: Accomplished [X] as measured by [Y], by doing [Z])
 - Interview stories follow **STAR** (Situation / Task / Action / Result)
 - Grant "research basis" narratives reference the **Heilmeier Catechism** (9 questions)
@@ -104,9 +120,11 @@ Required before high-stakes submissions:
 
 ## Task management
 
+- Before starting, read `todo.md` for open work and `changelog.md` for already-archived work
 - `todo.md` holds **only pending work** — never completed items
 - Completed items move to `changelog.md`, reverse-chronological
 - Don't mark `[x]` in todo — tell the AI to archive
+- When cleaning todo, move completed items into `changelog.md` in the same change and note the cleanup date/scope
 
 ## Naming conventions
 

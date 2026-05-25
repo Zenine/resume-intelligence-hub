@@ -29,12 +29,14 @@ These are what make the hub work. Preserve them when bootstrapping.
 1. **Single source of truth** — `profiles/` holds factual data; generated resumes are derivatives. Historical resumes are archive-only, never edited.
 2. **Positioning lock in AGENTS.md** — the target role level / industry is declared once at the top of AGENTS.md; every generated resume biases toward it. Change target = edit one file, not reprompt each time.
 3. **Dual-track separation (if enabled)** — recruitment and research/grant applications have entirely different formats, languages, and emphasis. Their data sources are split: `profiles/master.md` vs `profiles/research.md`. Do not merge.
-4. **Verification system, path-references only** — sensitive originals (IDs, contracts, certificates, appointment letters, diplomas) are NOT copied into Git. `verification/references.md` holds a path-reference index to local/cloud/public-URL locations. The repo stays shareable; originals stay out of version control.
-5. **Public-source cross-check before high-stakes submissions** — before senior-role interviews or grant applications, run a `verification/{date}-web-check.md` pass to cross-check every load-bearing claim.
-6. **todo.md vs changelog.md** — todo is only pending work; completed items migrate to changelog, dated, reverse-chronological. No stale `[x]` marks accumulating.
-7. **Per-application folders** — each attempt lives at `jobs/applications/{company}-{role}-{YYYY-MM-DD}/`. Same company, second attempt = second folder.
-8. **STAR stories are a separate asset** — `profiles/stories.md` holds interview-ready narratives, distinct from factual `master.md`.
-9. **Monolingual output** — the hub is either all Chinese or all English. Pick one at bootstrap; don't mix.
+4. **Credential / promotion dossier track (optional)** — senior professional titles, licensing, board certification, promotion packets, and similar dossiers need their own evidence matrix. They reuse `profiles/master.md` but organize proof in `credential-applications/` (or `职称/` in Chinese hubs), not inside job-application folders.
+5. **Verification system, path-references only** — sensitive originals (IDs, contracts, certificates, appointment letters, diplomas) are NOT copied into Git. `verification/references.md` holds a path-reference index to local/cloud/public-URL locations. The repo stays shareable; originals stay out of version control.
+6. **Public-source cross-check before high-stakes submissions** — before senior-role interviews, grant applications, or credential / promotion dossiers, run a `verification/{date}-web-check.md` pass to cross-check every load-bearing claim.
+7. **Personal attribution boundary** — distinguish personal ownership, team/department outcomes, and company-wide outcomes. For senior resumes, never convert a quote, pipeline, forecast, or group metric into personal revenue/P&L unless there is evidence.
+8. **todo.md vs changelog.md** — todo is only pending work; completed items migrate to changelog, dated, reverse-chronological. No stale `[x]` marks accumulating. Agents must read both before starting and update both when closing a task.
+9. **Per-application folders** — each attempt lives at `jobs/applications/{company}-{role}-{YYYY-MM-DD}/`. Same company, second attempt = second folder.
+10. **STAR stories are a separate asset** — `profiles/stories.md` holds interview-ready narratives, distinct from factual `master.md`.
+11. **Monolingual output** — the hub is either all Chinese or all English. Pick one at bootstrap; don't mix.
 
 ## Referenced frameworks (cite these by name when coaching)
 
@@ -137,13 +139,19 @@ This becomes the "positioning lock" in AGENTS.md. Also ask what should be **emph
 - `no` (most users) → skip `profiles/research.md`, skip `科研/` or `research-archive/`, skip grant-application workflow, remove "dual-track" language from AGENTS.md
 - `yes` → include research.md, research archive, grant workflow. Ask follow-up: "Which grant types do you typically apply for?" (affects the template's header examples)
 
-### Question 6 — Output language for resumes
+### Question 6 — Credential / promotion dossier track?
+"Do you need this hub to support professional title applications, licensing, board certification, promotion packets, or similar evidence-heavy dossiers? (Examples: senior engineer title, PE/CPA/bar/medical board, internal promotion packet.)"
+
+- `no` (most users) → skip `credential-applications/` or `职称/`, but keep verification available.
+- `yes` → include the credential track directory and use `workflows/credential-application.md`. Ask follow-up: "Which credential or promotion path, and what rulebook / eligibility document should we use?"
+
+### Question 7 — Output language for resumes
 "What language will your resumes/CVs be in?"
 - Chinese only / English only / both (bilingual by target market)
 
 If bilingual, the hub language from Q1 is the **management** language; resume output language is picked per application.
 
-### Question 7 — Repo location
+### Question 8 — Repo location
 "Where should the repo live? (Suggest `~/github/<username>-career` or `~/Documents/career-hub`. It must be a private location — never push to a public remote.)"
 
 ### Step 2 — Create the directory structure
@@ -164,6 +172,7 @@ Based on answers, copy from `templates/cn/` or `templates/en/`. Remove research-
 ├── verification/
 │   ├── references.md
 │   └── 证书资质/            # 或 credentials/（英文）
+├── 职称/                    # 或 credential-applications/（可选）
 ├── assessments/            # 性格测评、360 反馈等（可选，interview-prep 工作流引用）
 ├── 简历/                    # 或 resumes-archive/（英文）
 ├── 科研/                    # 仅科研轨启用时
@@ -173,7 +182,7 @@ Based on answers, copy from `templates/cn/` or `templates/en/`. Remove research-
 └── changelog.md
 ```
 
-**English version:** translate directory names (`简历/` → `resumes-archive/`, `科研/` → `research-archive/`, `证书资质/` → `credentials/`). `assessments/` stays the same.
+**English version:** translate directory names (`简历/` → `resumes-archive/`, `科研/` → `research-archive/`, `证书资质/` → `credentials/`, `职称/` → `credential-applications/`). `assessments/` stays the same.
 
 **Why no `output/` or `prompts/`:** the per-application folder (`jobs/applications/{company}-{role}-{date}/`) already stores generated resume/cover/prep — a top-level `output/` is redundant. Add `prompts/` on demand if the user starts curating reusable prompt templates.
 
@@ -205,6 +214,7 @@ Don't leave the user staring at a half-empty hub. Scan the seeded profiles and w
 - Drop certificate/credential PDFs into `verification/credentials/` (or `证书资质/`) and update `references.md`
 - Write the first 2-3 STAR stories in `profiles/stories.md` (examples already provided as format reference)
 - If research track enabled: populate at least one row in each of the publications/patents/projects tables
+- If credential / promotion track enabled: create the first evidence matrix under `职称/` or `credential-applications/` and list missing proof in `todo.md`
 
 Tell the user: "You have a working hub. The natural next step is **`workflows/career-planning.md`** — say '盘一下差距' / 'diff the gap' and I'll help you name a stretch target and turn it into this quarter's SMART plan. Or just say '继续完善档案' to keep filling in profiles first."
 
@@ -229,6 +239,7 @@ Once the hub exists and AGENTS.md is loaded, the agent handles these. See workfl
 - `workflows/interview-prep.md` — predict questions, prepare STAR answers, tech review
 - `workflows/verification.md` — pre-submission public-source cross-check
 - `workflows/grant-application.md` — **only if research track enabled**
+- `workflows/credential-application.md` — professional title / licensing / promotion dossiers with eligibility rules and evidence matrices
 
 ## Complementary skills from the ecosystem
 
@@ -263,6 +274,7 @@ Install any of the above with `npx skills add <owner/repo@skill> -g -y`. They co
 - **Don't** generate a resume by rewriting an old resume. Always regenerate from `profiles/master.md` against the specific JD.
 - **Don't** merge recruitment and research profiles into one. The separation is load-bearing when both tracks exist.
 - **Don't** skip verification before high-stakes submissions. One unverifiable claim can sink a whole application.
+- **Don't** blur ownership. Label outcomes as personal / team / department / company, and keep quotes, pipeline, forecasts, and actual revenue separate.
 
 ## Template index
 
